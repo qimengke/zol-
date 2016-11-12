@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="test/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="test/fontawesome/css/font-awesome.min.css"/>
+	</head>
+	<style type="text/css">
+		#btn:hover {
+			opacity: 0.8;
+		}
+	</style>
+	<body>
+		<!--== header ==-->
+		<div id="header">
+			<div class="header-box">
+				<ul class="logo">
+					<li><a href="javascript:void(0)"><img src="img/shoplogo.png" /></a></li>
+					<li><a href="javascript:void(0)">中关村在线旗下网上商城</a></li>
+				</ul>
+				<div class="login-btn">
+					还没有ZOL商城账号？
+					<a href="register.html">立即注册</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--== main ==-->
+		<div id="main">
+			<div id="login-inf">
+				<div id="lo-ads">
+					<img src="img/login-ads.jpg" alt="" />
+				</div>
+				<div class="login-main">
+					<div class="login-head">
+						<h3>登录ZOL商城</h3>
+						<a href="javascript:void(0)" class="otherLogin-bar mobilLogin-bar">
+							手机动态码登陆
+						</a>
+						<a href="javascript:void(0)" class="otherLogin-bar normal-bar">
+							普通方式登陆
+						</a>
+						<div class="hint" style="display: none;">
+							登录失败，用户名或密码输入错误！
+						</div>
+					</div>
+					
+					<div class="form-item username">
+						<input style="text-indent: 10px;" id="normal-username" type="text" autocomplete="off" placeholder="手机号/邮箱/用户名" class="login-username" maxlength="100">
+							<!--== 手机动态登陆页面的手机号 ==-->
+						<input id="mobile-username" type="text" style="display: none;" autocomplete="off" placeholder="手机号" class="login-username phone-number" maxlength="100">
+						<input style="text-indent: 10px;" type="password" class="login-pwd" placeholder="密码" />
+						<!--== 手机动态登陆页面的验证码 ==-->
+						<div id="picturecode"  style="display: none;" class="login-pwd">						
+							<input type="text" id="login-code" placeholder="图片验证码" />
+							<a id="yanzhengma" href="javascript:void(0)"><img src="img/yanzhengma.png" alt="" /></a>
+						</div>
+						<div id="sendcode"  class="login-pwd">						
+							<input type="text" id="input-code" placeholder="短信验证码" />
+							<a id="send-code" href="javascript:void(0)">发送验证码</a>
+						</div>
+						<div id="forget">
+							<a href="javascript:void(0)">忘记密码？</a>
+						</div>
+						<input style="color:white; font-size:18px; font-weight: bold;" type="button" id="btn" value="登&nbsp;&nbsp;&nbsp;陆" />
+						<div class="partner">
+							<span>合作账号登陆:</span>
+							<a href="javascript:void(0)" class="sina"></a>
+							<a href="javascript:void(0)" class="qq"></a>
+							<a href="javascript:void(0)" class="zhi"></a>
+							<a href="javascript:void(0)" class="baidu"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--== footer ==-->
+		<div id="footer">
+			<div id="footer-container">
+				<ul class="footer-nav">
+					<li><a href="javascript:void(0)">关于商城</a>|</li>
+					<li><a href="javascript:void(0)">联系我们</a>|</li>
+					<li><a href="javascript:void(0)">帮助中心</a></li>
+					<li class="word">©2016. 中关村在线 版权所有</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="登录注册/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+</html>

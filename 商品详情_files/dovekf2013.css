@@ -1,0 +1,166 @@
+.doveweb_embox{padding:5px;position:fixed;_position:absolute;border:#aaccff 1px solid;z-index:20001;background-color:#ffffff;_width:401px;background-image:url("../images/emotionall.jpg");background-position:5px 5px;background-repeat:no-repeat;top:269px;left:493px;font:12px/1.5 Arial;}
+.doveweb_embox span{border:#cccccc 1px solid;padding:1px;margin:0;display:block;float:left;}
+.doveweb_embox .t{border-width:0px 1px 1px 1px;clear:left;}
+.doveweb_embox .lf{border-width:1px 1px 1px 0px;}
+.doveweb_embox .tl{border-width:0px 1px 1px 0px;}
+.doveweb_embox span div {display:block;width:20px;height:20px;float:left;}
+.doveweb_embox img{border:#ffffff 1px solid;}
+
+#imCom {position:fixed;top:20px;_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+30));}
+
+.dovebus1{background:url('http://icon.zol-img.com.cn/saas/webim/img/online_img/dovepic1.png') no-repeat;}
+.dovebus2{background:url('http://icon.zol-img.com.cn/saas/webim/img/online_img/dovepic2.png') no-repeat;}
+.dovebus3{background:url('http://icon.zol-img.com.cn/saas/webim/img/online_img/dovepic3.png') no-repeat;}
+.dovebus4{background:url('http://icon.zol-img.com.cn/saas/webim/img/online_img/dovepic4.png') no-repeat;}
+
+.dove-chat-module{font:12px/1.5 Arial; color:#333;}
+.dove-chat-module select,.dove-chat-module input,.dove-chat-module button {vertical-align:middle;font-size:100%;}
+.dove-chat-module ul,.dove-chat-module ol {list-style:none;}
+.dove-chat em {font-style:normal;}
+.dove-shop-name. clearfix:after {content:"."; display: block; visibility: hidden; clear: both; height:0; font-size:0}
+.dove-shop-name .clearfix {*zoom:1}
+
+.dove-tab-bar a,.dove-foot a{color:#134ba0; text-decoration:none;}
+.dove-tab-bar a:hover,.dove-foot a:hover{color:#c00; text-decoration:underline;}
+.dove-shop-name h3,.dove-shop-name .close,.dove-tab li i,.dove-prev-btn,.dove-next-btn,.dove-btn,.dove-right,.dove-wrong,.dove-face-btn,.dove-chang-btn{ background:url(../images/ico.png) no-repeat;}
+
+.dove-chat-module{position:fixed;_position:absolute;width:345px;height:403px;border:5px solid #ccc; margin:0;padding:0;}
+.dove-shop-name{ position:relative; height:25px; padding:0 10px; background:#f7f7f7;}
+.dove-shop-name h3{ padding:0 0 0 20px; background-position:-45px -53px; font:12px/25px "arial";cursor:default;}
+.dove-shop-name .close{ position:absolute; top:4px; right:4px; display:block; width:18px; height:17px; background-position:0 -54px; cursor:pointer;}
+.dove-shop-name .close:hover{ background-position:0 -71px;}
+
+.dove-content{margin:0 0 10px; height:217px;width:345px;overflow-y:auto;overflow-x:auto; position:relative;background-color:white;white-space:normal;word-break:break-all;}
+.dove-tab-bar{position:relative;background-color:white;}
+.dove-tab{ position:relative; padding:10px 0 0; width:345px; height:30px; overflow:hidden;}
+.dove-tab ul{ padding:2px 26px; width:1000px; border-bottom:1px solid #e6e6e6;position:absolute;}
+.dove-tab li{ float:left; position:relative; padding:0 10px; height:25px; font:12px/25px "arial"; white-space:nowrap; cursor:pointer;}
+.dove-tab .cur{ margin:-1px -1px -3px; height:28px; background:#fff; border:1px solid #e6e6e6; border-bottom:0 none;}
+.dove-tab li i{ display:none; position:absolute; top:-7px; right:-7px; width:15px; height:14px; background-position:-20px -72px; font:0/0 arial; text-indent:-9999em; overflow:hidden;}
+.dove-tab .dhover{ background:#f2f2f2;}
+.dove-tab .dhover.cur{ background:#fff;}
+.dove-tab .dhover i{ display:block;}
+.dove-tab .tip{background:orange;}
+.dove-prev-btn,.dove-next-btn{ display:block; width:24px; height:29px; position:absolute; top:10px; text-indent:-9999em; overflow:hidden; font:0/0 arial; background-color:#fff;z-index:30001;}
+.dove-prev-btn{ left:0; background-position:0 -122px;}
+.dove-next-btn{ right:0; background-position:-15px -122px;}
+a.dove-prev-btn:hover{ background-position:0 -141px;}
+a.dove-next-btn:hover{ background-position:-15px -141px;}
+span.dove-prev-btn{ left:0; background-position:0 -160px;}
+span.dove-next-btn{ right:0; background-position:-15px -160px;}
+
+.dove-chat-content{position:absolute;background-color:white;}
+.dove-chat{ padding:5px 10px;}
+.dove-chat h3{ font:12px/22px "arial";}
+.dove-chat h3 em{ padding:0 0 0 10px; color:#999;}
+.dove-chat p{ padding:5px 10px 0;}
+.dove-peer{ color:#03f;}
+.dove-oneself{ color:#01a537;}
+
+.dove-tel-number{ position:absolute; bottom:70px; left:10px; padding:7px 10px 10px; width:303px; border:1px solid #e6e6e6; background:#f2f2f2;z-index:20001;}
+.dove-tel-number h3{ padding:0 0 6px; font:12px/20px "arial"; color:#ff8723;}
+.dove-text{ margin:0 2px 0 0; padding:3px 5px; width:82px; height:18px; border:1px solid #e6e6e6; font:12px/18px "arial"; color:#999;}
+.dove-btn{ margin:0 7px 0 0; width:60px; height:26px; border:0 none; cursor:pointer; background-position:0 0;}
+.dove-btn:hover{ background-position:0 -27px;}
+.dove-right{ position:relative; top:6px;display:inline-block; mar gin:6px 0 0; width:15px; height:14px; font:0/0 arial; text-indent:-9999em; overflow:hidden; background-position:-20px -55px;}
+.dove-wrong{ display:inline-block; padding:0 0 0 20px; line-height:24px; color:#fe0000; background-position:-45px -83px; background-position:-45px -85px\9; }
+
+.dove-function{ padding:10px; background:#f7f7f7;}
+.dove-textarea{ display:block; padding:7px 10px; width:303px; height:54px; border:1px solid #6F7FF7; background:#fff; font:12px/18px "arial"; color:#999; resize:none; overflow:hidden;}
+.dove-filter{ position:relative; height:33px; font:12px/33px arial;}
+.dove-filter label{ float:left; padding:0 10px 0 0; _position:relative; _top:10px; _left:-5px; white-space:nowrap;}
+.dove-filter label input{ margin:0 5px 0 0; *margin:0 5px 0 -3px; position:relative; top:-2px\0; +top:-1px; _top:-3px;}
+
+.dove-foot{ padding:2px 0 0;}
+.dove-face{ float:left;}
+.dove-face-btn{ display:block; margin:5px 0 0; width:15px; height:16px; background-position:-20px -88px; font:0/0 arial; overflow:hidden; text-indent:-9999em;}
+.dove-face-btn:hover{ background-position:-20px -105px;}
+.dove-chang-btn{ float:left; margin:5px 0 0 20px; width:15px; height:15px; background-position:0 -89px; background-position:0 -89px; font:0/0 arial; overflow:hidden; text-indent:-9999em;}
+.dove-chang-btn:hover{ background-position:0 -106px;}
+.dove-foot .dove-btn{ float:right;}
+
+.dzp-submit-btn,.dzp-settlement-btn,.dzp-s1,.dzp-s2{ background:url(../images/pic.png) no-repeat;}
+.dzp-close,.dzp-mention,.dzp-options .cur i,.dzp-success,.dzp-failure,.dzp-wrong,.dzp-rightico{ background:url(../images/img.png) no-repeat;}
+.dzp-select-layer dl{ position:relative; zoom:1;}
+.dzp-select-layer dt{ position:absolute; top:0; left:0; height:32px; line-height:32px; color:#999;}
+.dzp-select-layer dd{ padding:0 0 0 60px; line-height:32px;}
+/*dzp-select-layer*/
+.dzp-select-layer .dzp-layer-hd{ position:relative; padding:0 10px; height:34px; font-size:14px; line-height:34px; font-weight:bold; background:#f6f6f6;}
+.dzp-select-layer .dzp-close{ position:absolute; top:8px; right:8px; display:block; width:18px; height:17px; text-indent:-9999em; font:0/0 arial; background-position:-11px -355px; cursor:pointer;}
+.dzp-select-layer .dzp-close:hover{ background-position:-36px -355px;}
+.dzp-layer-content{ padding:8px 10px 0;}
+.dzp-select-layer .dzp-tips{ padding:15px 0 10px 60px; color:#f60; font-weight:bold;}
+.dzp-submit-btn{ margin:9px 0 0 70px; width:80px; height:30px; background-position:-111px -238px; font-size:14px; line-height:30px; color:#fff; font-weight:bold; cursor:pointer; border:0 none;}
+.dzp-submit-btn:hover{ background-position:-111px -269px;}
+.dzp-select-layer .dzp-layer-foot{ padding:0 0 20px;}
+
+/*zp-layer-box*/
+.dzp-layer-box{ position:absolute; top:0; left:0; padding:4px; width:414px; background:rgba(0,0,0,0.15); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#26000000,endcolorstr=#26000000,gradientType=1);}
+:root .dzp-layer-box{ filter:none;}
+.dzp-layer-body{ padding:20px 20px 20px 55px; background:#fff; border:1px solid #ccc;}
+.dzp-layer-box .dzp-layer-hd{ position:relative; zoom:1;}
+.dzp-layer-box .dzp-close{ position:absolute; top:-10px; right:-10px; display:block; width:18px; height:17px; text-indent:-9999em; font:0/0 arial; background-position:-11px -355px; cursor:pointer;}
+.dzp-layer-box .dzp-close:hover{ background-position:-36px -355px;}
+.dzp-layer-box .dzp-layer-content{ padding:0;}
+.dzp-layer-body h3{ font-size:14px; line-height:24px;}
+.dzp-layer-body p{ line-height:22px; color:#666;}
+.dzp-layer-body .dzp-total-price{ font-family:"Tahoma";}
+.dzp-layer-body .dzp-layer-foot{ padding:15px 0 0 50px;}
+.dzp-settlement-btn{ display:inline-block; margin:0 10px 0 0; width:110px; height:30px; background-position:0 -238px; font-size:12px; line-height:30px; font-weight:bold; color:#fff; border:0 none; cursor:pointer;}
+.dzp-settlement-btn:hover{ background-position:0 -269px;}
+.dzp-success{ padding:0 0 0 50px; background-position:-17px -628px;}
+.dzp-success p em{ padding:0 5px; font-weight:bold;}
+.dzp-failure{ margin:22px 0; padding:0 0 0 50px; background-position:-17px -566px;}
+.dzp-failure h3{ font:bold 14px/24px arial;}
+.dzp-failure p em{ padding:0 5px; color:#f60;}
+
+/*zp-shelves*/
+.dzp-shelves,.dzp-edit{ margin:10px 0 0; padding:20px; background:#f6f6f6; border:1px solid #f2f2f2;}
+.dzp-select-layer h3{ padding:0 0 10px; font:bold 14px/32px arial; border-bottom:1px dotted #e6e6e6;}
+.dzp-select-layer h3 span{ color:#f60;}
+.dzp-select-layer p{ padding:0 0 0 20px; color:#999; line-height:26px;}
+.dzp-sms{ margin:10px 0 0; background-position:-40px -895px;}
+.dzp-other{ background-position:-40px -920px;}
+.dzp-other a{ margin:0 5px;}
+.dzp-edit .dzp-tips-ico{ display:inline-block; margin:0 0 0 5px; position:relative; top:3px;}
+.dzp-edit p{ padding:5px 0 0;}
+.dzp-edit p a{ font-weight:bold;}
+.dzp-edit .dzp-failure{ margin:0;}
+.dzp-edit .dzp-more{ padding:10px 0 0 50px; font-weight:bold;}
+.dzp-select-layer{display:none;position:relative;top:0;left:0;width:450px;border:2px solid #f60;background:#fff;}
+.dzp-flow-step{ overflow:hidden; zoom:1;}
+.dzp-flow-step li{ float:left; padding:0 0 0 18px; width:195px; height:26px; font:14px/26px arial; text-align:center;}
+.dzp-flow-step .dzp-s1{ background-position:0 -35px; font-weight:bold; color:#fff;}
+.dzp-flow-step .dzp-s2{ background-position:0 -62px;}
+.dzp-flow-step-2 .dzp-s1{ background-position:0 -89px; color:#333; font-weight:normal;}
+.dzp-flow-step-2 .dzp-s2{ background-position:0 -116px; font-weight:bold; color:#fff;}
+.dzp-voucher .dzp-layer-content{ padding:10px 10px 0;}
+.dzp-voucher dl{ margin:10px 0 0; padding:0 0 0 80px;}
+.dzp-voucher dt{ width:80px; height:auto; text-align:right; color:#333; line-height:26px;}
+.dzp-voucher dt span{ position:relative; top:-5px; color:#999;}
+.dzp-voucher dd{ padding:0;line-height:26px; overflow:hidden; zoom:1;}
+.dzp-voucher .dzp-text{ float:left; margin:0 10px 0 0; padding:3px 5px; width:112px; height:18px; line-height:18px; border:1px solid #e6e6e6;}
+.dzp-rightico{ float:left; display:block; margin:6px 10px 0 0; width:15px; height:14px; font:0/0 arial; background-position:0 -379px;}
+.dzp-wrong{ float:left; padding:0 0 0 20px; color:#f00; background-position:-39px -736px;}
+.dzp-captcha .dzp-text{ width:64px;}
+.dzp-captcha span{ float:left; color:#999;}
+.dzp-textare{ float:left; margin:0 10px 0 0; padding:2px 5px; width:242px; height:54px; border:1px solid #e6e6e6; resize:none; font:12px/18px arial;overflow-y:auto;}
+.dzp-voucher .dzp-submit-btn{ margin:10px 0 0 90px;}
+.dzp-voucher .dzp-success{ margin:45px 20px 0;}
+.dzp-voucher .dzp-success h3{ padding:0; border:0 none;}
+.dzp-voucher .dzp-success p{ padding:0; text-align:left; color:#f60; line-height:18px;}
+.dzp-voucher .dzp-success1{ margin:0 20px 40px;padding:0 0 0 50px;}
+.dzp-voucher .dzp-success1 p{ padding:0; text-align:left; color:#f60; line-height:18px;}
+
+.dzp-layer-phone .dzp-layer-content{ padding:10px 10px 0;}
+.dzp-layer-phone dl{ margin:10px 0 0; padding:0 0 0 80px; position:relative; zoom:1;}
+.dzp-layer-phone dt{ position:absolute; top:0; left:0; width:80px; height:auto; text-align:right; color:#333; line-height:26px;}
+.dzp-layer-phone dt span{ position:relative; top:-5px; color:#999;}
+.dzp-layer-phone dd{ padding:0;line-height:26px; overflow:hidden; zoom:1;}
+.dzp-layer-phone .dzp-text{ float:left; margin:0 10px 0 0; padding:3px 5px; width:112px; height:18px; line-height:18px; border:1px solid #e6e6e6;}
+.dzp-layer-phone .dzp-submit-btn{ margin:10px 0 0 90px;}
+.dzp-layer-phone .dzp-layer-foot p{ margin:10px 0 0 90px;}
+.dzp-layer-phone .captcha-img{ float:left; margin:0 10px 0 0;}
+.dzp-layer-phone .captcha-img img{float:inherit;display:block;}
+.dzp-layer-phone .dzp-failure{ padding:10px 0 10px 50px}
+.dzp-layer-phone p{font:12px/1.5 Arial;color:black;padding:0;}

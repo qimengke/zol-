@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="test/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="test/fontawesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/select2.css" />
+		<link rel="stylesheet" type="text/css" href="css/myCenter.css" />
+	</head>
+	<style type="text/css">
+		.select2-container{width: 130px;}
+	</style>
+
+	<body>
+
+		<!--** nav **-->
+		<div id="nav">
+			<div class="nav-center">
+				<div class="nav-left">
+					<span class="nav-left-list special"><a href="index.html">商城首页</a></span>
+					<span id="login-username" class="nav-left-list"> Hi~欢迎来到ZOL商城，请
+						<a id='free-register' href="login.html">登陆</a>
+					</span>
+					<span class="nav-left-list"><a id="free-register" href="register.html">免费注册</a></span>
+				</div>
+				<ul class="nav-right">
+					<li class="nav-right-list"><a href="#">我的订单</a></li>
+					<li class="nav-right-list" style="position:relative;">
+						<a class="no-line" href="#">买家中心
+							&nbsp;<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+							</a>
+
+						<div id="second-list1" style="display:none;background:white;width: 100px; border:1px solid #E6E6E6;position: absolute;left:0px; top:100%;">
+							<a href="#">我的优惠券&nbsp;<em>5</em></a>
+							<a href="#">关注的店铺&nbsp;<em>12</em></a>
+							<a href="#">关注的商品&nbsp;<em>8</em></a>
+						</div>
+					</li>
+					<li class="nav-right-list"><a href="#">购物车0件</a></li>
+					<li class="nav-right-list"><a href="#">帮助中心</a></li>
+					<li class="nav-right-list"><a href="#">|</a></li>
+					<li class="nav-right-list" style="position:relative;">
+						<a class="no-line" href="#">
+							<i class="glyphicon glyphicon-phone"></i> 手机商城 &nbsp;
+							<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+						</a>
+
+						<div id="second-list2" style="display: none;background:white;width:150px;height:150px ;position:absolute;top:100%; left:0px;  padding-left:0px; ">
+							<img style="margin-top:13px;" src="img/erweima.png" />
+
+						</div>
+					</li>
+					<li class="nav-right-list"><a href="#">中关村在线</a></li>
+					<li class="nav-right-list"><a href="#">商家入驻</a></li>
+					<li class="nav-right-list last-list" style="position:relative;">
+						<a class="no-line" href="#">联系客服
+							&nbsp;<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+							</a>
+						<div id="second-list3" style="width:100px;display:none; position:absolute; left:0px; top:100%;">
+							400-678-0068
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--** nav **-->
+
+		<div id="container">
+			<!--**    header    **-->
+
+			<div class="header">
+				<div class="wrapper clearfix">
+					<a href="index.html" class="logo"></a>
+					<div class="searchbox">
+						<form action="javascript:void(0)" method="GET" target="_blank">
+							<div class="searchmod">
+
+								<input name="keyword" type="text" class="searchtext" value="搜索商品/店铺" maxlength="50" autocomplete="off">
+								<ul style="display:none;"></ul>
+							</div>
+							<input name="do_search" type="submit" class="searchbtn">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!--**  main部分     **-->
+			<div class="mainbody module clearfix" id="mainbody">
+				<!-- header end-->
+				<div class="side" id="side">
+					<h3><a id="buyer-center" href="javascript:void(0)">买家中心</a></h3>
+					<ul class="nav clearfix">
+						<li>
+							<a id="have-bought" href="javascript:void(0)">我买到的商品</a>
+						</li>
+						<li>
+							<a id="cheap" href="javascript:void(0)">我的优惠劵</a>
+						</li>
+						<li>
+							<a id="manage" href="javascript:void(0)">评价管理</a>
+						</li>
+						<li>
+							<a id="complaints" href="javascript:void(0)">投诉维权</a>
+						</li>
+						<li>
+
+							<a id="seller" href="javascript:void(0)">
+                           	 关注的商家  </a>
+
+						</li>
+						<li>
+
+							<a id="shopName" href="javascript:void(0)">
+                           	 关注的商品  </a>
+
+						</li>
+						<li>
+							<a id="new-add" href="javascript:void(0)">修改地址</a>
+						</li>
+						<li>
+							<a href="changepwd.html">修改密码</a>
+						</li>
+
+						<li>
+							<em class="fold"></em>
+							<a href="javascript:void(0)">
+                            消息中心                                                    </a>
+							<ul class="subnav" style="display:none;">
+								<li>
+									<a href="javascript:void(0)">系统通知                                                    
+                                            </a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">商品咨询                                                    
+                                            </a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0)">我的团购</a>
+						</li>
+
+						<li><a href="hjavascript:void(0)" style="font-size: 12px;" target="_blank">中关村在线用户协议</a></li>
+						<li><a href="javascript:void(0)" style="font-size: 12px;" target="_blank">网购防骗点这里</a></li>
+					</ul>
+				</div>
+
+				<div class="main main_test" id="main_test">
+					<div class="mainbg"></div>
+
+					<!--** 进入时显示的页面效果   **-->
+					<div class="buyer-home">
+						<h3 class="buyer-header">zol_6757v041f89m751，下午好！</h3>
+						<ul class="grand-total">
+							<li><span class="label">第一次在商城购买，你不能错过。</span>&nbsp;&nbsp;&nbsp;<a class="go" href="index.html">去购物&gt;&gt;</a></li>
+							<li>
+								<span class="label z-beans" id="score-info">我的Z金豆：</span>
+								<span class="point" id="user_score_sum">0</span>
+								<a href="/index.php?c=Coupon" target="_blank" id="Zplusc">商城优惠劵（0）</a>|
+								<a href="javascript:void(0)" target="_blank" id="Ztuanc">&nbsp;团购优惠劵（0）</a>
+							</li>
+						</ul>
+
+						<!-- 猜您喜欢 photo-list -->
+						<div class="photobox mt20" id="zp-goods-recommend" style="">
+							<div class="photo-tab">
+								<ul class="clearfix">
+									<li class="hover" style="margin-top:1px;">猜您喜欢</li>
+								</ul>
+							</div>
+							<div class="photo-list">
+								<div class="photo-content">
+									<ul class="clearfix" style="width:10000px;left:0;">
+										<li style="padding: 0 8px 0 7px;">
+											<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待"><span>三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待</span></a>
+											<div class="price">¥<em>1988.00</em></div>
+										</li>
+										<li style="padding: 0 8px 0 7px;">
+											<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="【*·顺丰包邮】三星 GALAXY A7（A7000/双4G）移动联通4G手机 双卡双待"><span>【*·顺丰包邮】三星 GALAXY A7（A7000/双4G）移动联通4G手机 双卡双待</span></a>
+											<div class="price">¥<em>1798.00</em></div>
+										</li>
+										<li style="padding: 0 8px 0 7px;">
+											<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="【新店开张，购买赠豪礼】三星 GALAXY Note 3（N9008/移动3G）主屏尺吋：5.7英吋主屏分辨率：1920x1080像素"><span>【新店开张，购买赠豪礼】三星 GALAXY Note 3（N9008/移动3G）主屏尺吋：5.7英吋主屏分辨率：1920x1080像素</span></a>
+											<div class="price">¥<em>1599.00</em></div>
+										</li>
+										<li style="padding: 0 8px 0 7px;">
+											<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="【货票同行 送荣耀原装耳机】华为 畅享5S（TAG-AL00/全网通）金属机身指纹识别，5.0英寸屏，八核64位处理器，1300万+500万"><span>【货票同行 送荣耀原装耳机】华为 畅享5S（TAG-AL00/全网通）金属机身指纹识别，5.0英寸屏，八核64位处理器，1300万+500万</span></a>
+											<div class="price">¥<em>1129.00</em></div>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<!-- 猜您喜欢 photo-list -->
+					</div>
+					<!--**  进入时的页面结束   **-->
+
+					<!--**  我买到的商品    **-->
+
+					<div class="complaints-apply" style="display: none;">
+						<div class="apply-searchbox clearfix">
+							<form action="index.php" method="get" id="searchForm">
+								<div class="searchmod">
+									<input name="searchKeyword" type="text" class="searchtext" value="搜索商品/店铺" maxlength="50" autocomplete="off">
+									<ul style="display:none;"></ul>
+
+								</div>
+								<input name="do_search" type="submit" class="searchbtn">
+
+								<a href="javascript:void(0)" style="display:none;" class="open-more fold-more"><i></i>展开更多筛选</a>
+								<a href="javascript:void(0)" class="more-tuanlist" target="_blank">查看团购订单&gt;&gt;</a>
+								<div class="clear"></div>
+							</form>
+
+							<table class="order-list-nav">
+								<tbody>
+									<tr>
+										<td class="cell-1">商品信息</td>
+										<td class="cell-2">单价(元)</td>
+										<td class="cell-3">数量</td>
+										<td class="cell-4">售后</td>
+										<td class="cell-5">实付款（元）</td>
+										<td class="cell-6">
+											<div class="selectbox">
+												全部状态
+												<!--<input type="text" name="searchStatus" value="全部状态">
+                                        <ul style="height: 182px; display: none;" id="searchStatusList">
+                                            <!--<li value="0" class="">全部状态</li>-->
+										</td>
+										<td class="cell-7">操作</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="order-infor mt" style="z-index: 1;">
+								<span>订单编号：2016030514265735793276</span>
+								<span>下单时间：2016-03-05 14:26:57</span>
+								<div class="seller">
+									<label>店铺：</label>
+									<span class="tag-security" title="Z保障+"></span>
+									<a href="javascript:void(0)" target="_blank" class="merchantInfo">盛通数码专营店</a>
+									<a title="点击“生意宝”开始交谈" href="javascript:void(0)"><img alt="" width="21" height="21" src="http://icon.zol-img.com.cn/newshop/my/company-ico-offline.png"></a>
+									<div class="contact-infor" style="display: none;">
+										<h3>联系信息</h3>
+										<p><span>联 系 人：</span>张丽</p>
+										<p><span>联系电话：</span>010-62684549</p>
+										<p><span>地　　址：</span>北京市海淀区彩和坊路10号1+1大厦701室</p>
+									</div>
+								</div>
+								<span class="cancel-order"><a href="javascript:void(0)">取消订单</a></span> </div>
+
+							<table class="order-list" border="0" cellspacing="0" cellpadding="0">
+								<tbody>
+									<tr>
+										<td>
+											<div class="product-infor">
+												<div class="subproduct first clearfix">
+													<a class="pic" href="javascript:void(0)" target="_blank"><img height="60" width="80" alt="【双卡双4G 顺丰包邮】三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待 真八核 纤薄机身 一体式设计 钻石切割斜边" src=""></a>
+													<div class="infor">
+														<h3><a href="javascript:void(0)" target="_blank">【双卡双4G 顺丰包邮】三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待 真八核 纤薄机身 一体式设计 钻石切割斜边</a></h3>
+														<h3><a target="_blank" href="javascript:void(0)">[交易快照]</a></h3>
+														<p><span id="pro-color" class="color">颜色：<em>黑色行货16GB</em></span><span class="setdoll">套装：<em>官方标配</em></span></p>
+													</div>
+													<div id="one-price" class="price">1958.00</div>
+													<div id="cartNumber_2308941" class="num">
+														1</div>
+													<div class="aftermarket">
+
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="sum">
+											<p id="total-price" class="order-price">1958.00</p>
+											<p class="send-price">
+												（免运费） </p>
+										</td>
+										<td class="status">
+											<p class="red" style="color:#FF5500">买家已付款</p>
+
+											<p><a target="_blank" class="btn" href="index.html">继续逛逛</a></p>
+
+										</td>
+										<td class="operate">
+											<p><a href="javascript:void(0)">订单详情</a></p>
+
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							</div>
+							<!-- 猜您喜欢 photo-list -->
+							<div class="photobox mt20" id="zp-goods-recommend" style="">
+								<div class="photo-tab">
+									<ul class="clearfix">
+										<li class="hover" style="margin-top:1px;">猜您喜欢</li>
+									</ul>
+								</div>
+								<div class="photo-list">
+									<div class="photo-content">
+										<ul class="clearfix" style="width:10000px;left:0;">
+											<li style="padding: 0 8px 0 7px;">
+												<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待"><span>三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待</span></a>
+												<div class="price">¥<em>1988.00</em></div>
+											</li>
+											<li style="padding: 0 8px 0 7px;">
+												<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="【*·顺丰包邮】三星 GALAXY A7（A7000/双4G）移动联通4G手机 双卡双待"><span>【*·顺丰包邮】三星 GALAXY A7（A7000/双4G）移动联通4G手机 双卡双待</span></a>
+												<div class="price">¥<em>1798.00</em></div>
+											</li>
+											<li style="padding: 0 8px 0 7px;">
+												<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="【新店开张，购买赠豪礼】三星 GALAXY Note 3（N9008/移动3G）主屏尺吋：5.7英吋主屏分辨率：1920x1080像素"><span>【新店开张，购买赠豪礼】三星 GALAXY Note 3（N9008/移动3G）主屏尺吋：5.7英吋主屏分辨率：1920x1080像素</span></a>
+												<div class="price">¥<em>1599.00</em></div>
+											</li>
+											<li style="padding: 0 8px 0 7px;">
+												<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="【货票同行 送荣耀原装耳机】华为 畅享5S（TAG-AL00/全网通）金属机身指纹识别，5.0英寸屏，八核64位处理器，1300万+500万"><span>【货票同行 送荣耀原装耳机】华为 畅享5S（TAG-AL00/全网通）金属机身指纹识别，5.0英寸屏，八核64位处理器，1300万+500万</span></a>
+												<div class="price">¥<em>1129.00</em></div>
+											</li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+							<!-- 猜您喜欢 photo-list -->
+
+						</div>
+
+						<!--**  我买到的商品结束    **-->
+
+						<!--**  店铺优惠券开始     **-->
+						<div class="coupons-box" style="display: none;">
+							<div class="coupons-hd">店铺优惠券</div>
+							<ul class="screening-bar clearfix">
+								<li class="current">未使用（0）</li>
+								<li>已使用（0）</li>
+								<li>已过期（0）</li>
+								<li>回收站（0）</li>
+							</ul>
+							<div class="coupons-empty">当前没有未使用的店铺优惠券！</div>
+						</div>
+						<!--**  店铺优惠券开始     **-->
+
+						<!--**   评价管理      **-->
+						<div class="appraise-manage" style="display: none;">
+							<div class="photo-tab">
+								<span class="other-text">已评价的商品，只能修改一次评价，提升或维持评价等级，订单完成30天后无法修改。</span>
+								<ul class="clearfix">
+									<li class="hover" style="margin-top:-32px;">我发出的评价</li>
+								</ul>
+							</div>
+							<p class="no-appraise" style="display:none;">您还没有在商城买过东西哦，所以没有评价，快去逛逛吧~<a class="go" href="#">去逛逛&gt;&gt;</a></p>
+							<table class="appraise-nav">
+
+								<tbody>
+									<tr>
+										<td class="cell-1">
+											<input type="hidden" name="c" value="AppraiseManage">
+											<input type="hidden" name="a" value="AppraiseList">
+											<select name="evaluate" id="evaluate">
+												<option value="0">评价</option>
+												<option value="1">好评</option>
+												<option value="2" selected="">中评</option>
+												<option value="3">差评</option>
+											</select>
+										</td>
+
+										<td class="cell-2">
+											<select name="replyContent" id="replyContent">
+												<option value="0" selected="">所有评价</option>
+												<option value="1">有回复内容</option>
+												<option value="2">无回复内容</option>
+											</select>
+										</td>
+										<td class="cell-3">被评价人</td>
+										<td class="cell-4">商品信息</td>
+										<td class="cell-5">操作</td>
+									</tr>
+
+								</tbody>
+							</table>
+							<!-- 评价内容 -->
+							<ul class="appraise-list">
+								<p class="no-appraise">该筛选条件下没有任何评价哦。</p>
+
+							</ul>
+						</div>
+						<!--**   评价管理结束           **-->
+
+						<!--**   投诉管理开始        **-->
+						<div class="complaints-list" style="display: none;">
+							<h3>投诉维权</h3>
+							<p class="no-appraise">如需投诉维权，请到“我买到的商品”列表中,根据订单选择。</p>
+						</div>
+
+						<!--**   投诉管理结束        **-->
+
+						<!--**   关注的商家开始       **-->
+
+						<div class="attention" style="display: none;">
+							<table class="attention-nav">
+								<tbody>
+									<tr>
+										<td class="cell-1" style="width:163px;">商家信息</td>
+										<td class="cell-2" style="width:120px;">店铺总销量</td>
+										<td class="cell-3" style="width:183px;">关注时间</td>
+
+										<td class="cell-5" style="width:172px;">商品推荐</td>
+										<td class="cell-6" style="width:102px;">操作</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="attention-box" style="height:100px;line-height:100px;text-align:center;font-size: 14px">
+								没有关注任何商家，快去<a href="javascript:void(0)">商城逛逛</a>关注你喜欢的商家吧~
+							</div>
+							<!-- 关注的商家内容 end-->
+
+							
+							<!-- 猜您喜欢 photo-list -->
+							<div class="photobox mt20" id="zp-goods-recommend" style="">
+								<div class="photo-tab">
+									<ul class="clearfix">
+										<li class="hover" style="margin-top:1px;">猜您喜欢</li>
+
+									</ul>
+								</div>
+								<div class="photo-list">
+									<div class="photo-content">
+										<ul class="clearfix" style="width:10000px;left:0;">
+											<li>
+												<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待"><span>三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待</span></a>
+												<div class="price">¥<em>1988.00</em></div>
+											</li>
+											<li>
+												<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="【顺丰包邮】三星 GALAXY A7（A7000/双4G）移动联通4G手机 双卡双待"><span>【顺丰包邮】三星 GALAXY A7（A7000/双4G）移动联通4G手机 双卡双待</span></a>
+												<div class="price">¥<em>1798.00</em></div>
+											</li>
+											<li>
+												<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="【新店开张，购买赠豪礼】三星 GALAXY Note 3（N9008/移动3G）主屏尺吋：5.7英吋主屏分辨率：1920x1080像素"><span>【新店开张，购买赠豪礼】三星 GALAXY Note 3（N9008/移动3G）主屏尺吋：5.7英吋主屏分辨率：1920x1080像素</span></a>
+												<div class="price">¥<em>1599.00</em></div>
+											</li>
+											<li>
+												<a class="pic" href="javascript:void(0)" target="_blank"><img src="" alt="【货票同行 送荣耀原装耳机】华为 畅享5S（TAG-AL00/全网通）金属机身指纹识别，5.0英寸屏，八核64位处理器，1300万+500万"><span>【货票同行 送荣耀原装耳机】华为 畅享5S（TAG-AL00/全网通）金属机身指纹识别，5.0英寸屏，八核64位处理器，1300万+500万</span></a>
+												<div class="price">¥<em>1129.00</em></div>
+											</li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+							<!-- 猜您喜欢 photo-list -->
+						</div>
+
+						<!--**    关注的商家结束      **-->
+
+						<!--**   关注的商品 开始      **-->
+						
+
+							<!--**   关注的商品 结束      **-->
+
+							<!--**      修改地址开始             **-->
+							<div id="add-box" style="display: none;">
+							<div class="add-address" id="contentBox" >
+								<div class="add-address-header">请填写收货地址</div>
+								<input type="hidden" id="addressId" value="">
+								<div class="item item2">
+									<label class="list-title" for="name"><i>*</i>收货人姓名：</label>
+									<p>
+										<input class="text" id="name" type="text" maxlength="10" value="">
+										<b class="correct"></b>
+										<b class="error">请输入中文汉字</b>
+									</p>
+								</div>
+								<div class="item item2" style="z-index:3;">
+									<label class="list-title"><i>*</i>所在地区：</label>
+									<div class="clearfix">
+										<div class="main" style="margin-left:50px;">
+											<select name="loc_province" id="loc_province">
+											</select>
+											<select name="loc_city" id="loc_city">
+											</select>
+											<select name="loc_town" id="loc_town">
+											</select>
+											<input type="button" name="btnval" id="btntext" value="获取地址" />
+											<p id="msg"></p>
+										</div>
+									</div>					
+								</div>
+								<div class="item item2">
+									<label class="list-title" for="address"><i>*</i>街道地址：</label>
+									<p>
+										<input class="text" id="addr" maxlength="30" type="text" value=""><b class="correct"></b><b class="error">请填写真实的收货地址</b></p>
+								</div>
+								<div class="item item2">
+									<label class="list-title" for="zipcode"><i>*</i>邮政编码：</label>
+									<p>
+										<input class="text" id="zipcode" type="text" maxlength="6" value=""><b class="correct"></b><b class="error">请填写正确的六位邮编</b></p>
+								</div>
+
+								<div class="item item2">
+									<label class="list-title" for="phone"><i>*</i>手机号码：</label>
+									<p>
+										<input class="text" id="phone" type="text" maxlength="11" value=""><b class="correct"></b><b class="error">请填写正确的11位手机号码</b></p>
+								</div>
+								
+								
+								
+								<div class="item item2">
+				                    <label class="list-title" for="email">电子邮件：</label>
+				                    <p><input class="text" id="email" type="text" maxlength="50" value=""><b class="correct"></b><b class="error">邮箱格式不正确</b></p>
+				                    <p class="set-default"><label><input type="checkbox" id="setDefault">设置为默认</label></p>
+				                    <p><a href="javascript:void(0)" class="btn" id="saveAddress">保存</a><span class="stips">您当前已添加1条地址，还可增加9条。</span></p>
+				                </div>
+				                
+				                <table class="address">
+			                    <tbody><tr>
+			                        <th>收货人</th>
+			                        <th>所在地区</th>
+			                        <th>街道地址</th>
+			                        <th>邮编</th>
+			                        <th>电话 / 手机</th>
+			                        <th>操作</th>
+			                    </tr>
+			                                        <tr>
+			                        <td class="consignee">hhhhh</td>
+			                        <td class="area" provinceid="7" cityid="101">吉林&nbsp;&nbsp;珲春市</td>
+			                        <td class="street-address"><p>hhtrhreteytr</p></td>
+			                        <td class="zip-code">454545</td>
+			                        <td class="phone">
+			                                                        <p fn="mobile">13545345435</p>                        </td>
+			                        <td class="operate" id="680238" addressid="680238" email="" isdefault="0">
+			                                                            <a href="javascript:void(0)" fn="setDefaultAddress">设为默认</a>
+			                            <a class="delete" href="javascript:void(0)" fn="deleteAddress">删除</a>
+			                        </td>
+			                    </tr>
+			                                   
+			                    </tbody>
+				                </table>
+							</div>
+							</div>
+							<!--**      修改地址结束            **-->
+							
+							
+						
+
+						<!--**  footer部分    **-->
+						<div class="clearfix">
+
+						</div>
+						<div class="footer">
+							<p class="links"><a target="_blank" href="javascript:void(0)">关于商城</a>|<a target="_blank" href="javascript:void(0)">营销中心</a>|<a target="_blank" href="javascript:void(0)">服务中心</a>|<a target="_blank" href="javascript:void(0)">联系我们</a>|
+								<a href="javascript:void(0)">发展历程</a>|<a target="_blank" href="javascript:void(0)">媒体报道</a></p>
+							<p><span class="copyright">©2016中关村在线 版权所有. 京ICP备09041801号-182 <a target="_blank" href="http://www.miibeian.gov.cn/">京ICP证010391号</a></span></p>
+							<div class="authentication">
+								<a target="_blank" href="javascript:void(0)"><img width="108" height="40" alt="经营性网站备案信息" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/beian.png"></a>
+								<a target="_blank" href="javascript:void(0)"><img width="108" height="40" alt="海淀网络警察提醒您" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/jingcha.png"></a>
+								<a target="_blank" href="javascript:void(0)" id="___szfw_logo___"><img src="https://search.szfw.org/cert.png?l=CX20111228001277001325"></a>
+
+							</div>
+							<img style="display:none" border="0" width="1" height="1" src="http://pv.zol.com.cn/images/pvhit0001.gif?t=1457010873310084&amp;subcat=0&amp;vuserid=zol_6757v041f89m751&amp;http://order.zol.com/index.php?c=Cart&amp;ip_ck=58WJ5/zwj7QuMDI4MDY3LjE0NTYxOTM5NjE=&amp;lv=1457010874&amp;vn=27&amp;sr=1280x800&amp;sc=24&amp;fl=20.0&amp;ti=%E8%B4%AD%E7%89%A9%E8%BD%A6%20%E6%9F%A5%E7%9C%8B%E8%B4%AD%E7%89%A9%E8%BD%A6&amp;se=61cd5ab62d3d75aacb355f81f906fdff&amp;uv=211.95.6.66&amp;cv=&amp;zmac=0&amp;manuid=0&amp;ldt=10555&amp;mzcv=&amp;mztext=&amp;third_ip_ck=58WJ5/zwj7QuMDI4MDY3LjE0NTYxOTM5NjE=&amp;posid=">
+						</div>
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="js/select2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/location.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/area.js" type="text/javascript" charset="utf-8"></script>
+	<script src="登录注册/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/myCenter.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

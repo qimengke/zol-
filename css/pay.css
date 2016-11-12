@@ -1,0 +1,131 @@
+@charset "utf-8";
+*{
+	margin:0px;
+	padding: 0px;
+}
+span {
+	display: block;
+}
+a {
+    color: #36c;
+    text-decoration: none;
+}
+
+ul,li {
+	list-style: none;
+}
+body {
+    font: 12px/1.5 Arial;
+    color: #333;
+}
+dl {
+	margin:0px;
+}
+.clearfix {
+	clear: both;
+}
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+    margin: 0;
+    padding: 0;
+}
+
+/*== footer ==*/
+.footer {
+    margin: 40px auto 0;
+    padding: 5px 0 20px;
+    width: 960px;
+    text-align: center;
+    border-top: 1px solid #e3e3e3;
+}
+.footer .links {
+    padding: 14px 0 6px;
+    color: #ccc;
+}
+.footer .links a {
+    margin: 0 10px;
+}
+.footer p .copyright {
+    color: #333;
+}
+.footer .copyright {
+    display: inline-block;
+    height: 23px;
+    padding-left: 28px;
+    position: relative;
+    line-height: 23px;
+}
+.authentication {
+    padding-top: 12px;
+}
+
+/*==    支付成功画面         ==*/
+#container {
+	width:960px;
+	height:auto;
+	margin:0px auto;
+	min-height: 400px;
+	margin-top:50px;
+}
+.chenggong {
+	width:698px;
+	height:298px;
+	border:1px solid #777777;
+	margin:50px auto;
+	padding:30px 10px 0px 10px;
+}
+.cg-top {
+	width:100%;
+	height:50px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.cg-nav {
+	width:100%;
+	height:31px;
+}
+.cg-nav li {
+	width:115px;
+	height:31px;
+	float:left;
+	margin-right:10px;
+}
+.cg-nav li a {
+	color: #676C6F;
+	font-size: 16px;
+	text-align: center;
+}
+.jian {
+	width:100%;
+	height:68px;
+}
+.neirong {
+	width:678px;
+	height:130px;
+	border:1px solid #E6E6E6;
+	background: #EDFFCD;
+}
+.duigou {
+	width:100px;
+	height:100%;
+	float:left;
+}
+.content{
+	width:400px;
+	height:100%;
+	float:left;
+}
+#total-price {
+	width:100%;
+	height:43px;
+	color: #2D2D2D;
+	font-size: 14px;
+	padding-top:20px;
+}
+
+
+
+
+
+
+
+
+

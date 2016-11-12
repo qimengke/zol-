@@ -1,0 +1,420 @@
+@charset "utf-8";
+*{margin: 0px; padding: 0px;}
+ul,li {list-style: none;}
+html,body {
+	width: 100%;
+	height:100%;
+}
+a {
+    color: #134ba0;
+    text-decoration: none;
+}
+a:hover {
+    color: #c00;
+    text-decoration: underline;
+}
+
+/*========  nav部分开始  =========*/
+#nav {
+	width：100%;
+	height:29px;
+	border-bottom: 1px solid #E6E6E6;
+	background-color: #F5F5F5;
+}
+.nav-center {
+	width:1200px;
+	height:100%;
+	margin: 0px auto;
+}
+.nav-left {
+	width:520px;
+	height:100%;
+}
+.nav-left, .nav-right {
+	float:left;
+}
+.nav-left .nav-left-list, .nav-right-list {
+	float: left;
+	font: 12px/24px "Microsoft YaHei","微软雅黑";
+	margin-left: 20px;
+	text-align: center;
+	line-height: 29px;
+}
+.last {
+	margin:0px;
+}
+.nav-left .special a,.nav-right li a {
+	color:#666666;
+}
+.nav-left .special a:hover, .nav-right li a:hover {
+	color: #c00;
+}
+i {
+	font-size:8px;
+}
+.glyphicon-phone{
+	color:#C40000;
+	font-size: 12px;
+}
+.glyphicon-chevron-up {
+	display:none;
+	color:#D1CCD1;
+}
+.active {
+	background:white;
+}
+#second-list1 a {
+	display: block;
+}
+#second-list1 a em {
+	color:#C40000;
+	
+}
+#second-list1,#second-list2,#second-list3 {
+	border:1px solid #E6E6E6;
+}
+a.no-line{
+	text-decoration: none;
+}
+/*========  nav部分结束  =========*/
+
+/*========  banner部分开始  =========*/
+
+/*== 搜索框部分 ==*/
+#search {
+	width:1200px;
+	height:117px;
+	margin: 0px auto;
+	z-index: 9999;
+}
+#logo {
+	width:411px;
+	height: 117px;
+}
+#logo h1, #logo p {
+	float:left;
+	font-size: 14px;
+
+}
+#logo h1{
+	margin-top:25px ;
+	border-right: 1px solid #EEEEEE;
+	width:165px;
+	height:32px;
+	margin-right: 20px;
+}
+#logo p {
+	font-size: 14px;
+	margin-top: 30px;
+}
+#logo, #search-box, #small-ads {
+	float: left;
+}
+#search-box{
+	width:550px;
+	height:117;
+	margin-right:20px;
+}
+#search-box form {
+	width:550px;
+	height:36px;
+}
+
+.search .search-text {
+	width: 446px;
+	height:32px;
+	border: 2px solid #c40000;
+	margin:0px;
+	float:left;
+}
+#search-box .search {
+	margin-top: 20px;
+	/*margin-right:20px;*/
+	margin-right: 10px;
+}
+.search .search-btn {
+	margin:0px;
+	width:91px;
+	height:32px;
+	background: #c40000;
+	border:0;
+	float: left;
+	color: white;
+	clear: right;
+}
+#search-box #keywords {
+	width:610px;
+	height: 30px;
+}
+#search-box #keywords a {
+	display: block;
+	float: left;
+	margin-right:15px;
+	color: #999999;
+	font-size: 12px;
+}
+#search-box #keywords a:hover {
+	color: #c00;
+}
+/*== banner部分的导航栏 ==*/
+
+#main-nav {
+	width:1200px;
+	height: 34px;
+	margin: 0px auto;
+	margin-top:10px;
+	border-bottom: 2px solid #C40000;	
+	z-index: 99999999 !important;
+}
+#nav-box, .nav-top, .ads-tips {
+	float:left;
+}
+#nav-box {
+	width:200px;
+	height:34px;
+	position: relative;
+
+}
+.nav-first {
+	width:100%;
+	height:100%;
+	font-size: 13px;
+	text-align: center;
+	padding-top: 10px;
+	background: #C40000;
+	color:white;
+	margin-top:0px;	
+}
+
+.nav-second {
+	width:200px;
+	height: 340px;
+	background: #2D2D2D;
+	position: absolute;
+	top:100%;
+	left:0px;
+}
+.nav-second li{
+	height:38px;
+	border-top: 1px solid #3D3D3D;
+	line-height: 38px;
+	padding-left:5px;
+}
+.nav-second li i{
+	font-size: 14px;
+	color:#ABABAB;
+}
+.nav-second li:first i{
+	font-size:20px;
+}
+.nav-second li a {
+	font-size: 12px;
+	color: #fff;
+}
+.nav-second li .fa-mobile {
+	font-size: 25px;
+}
+.nav-second li span {
+	color: #fff;
+}
+#main-nav .clock {
+	position: absolute;
+	top:374px;
+	left:0px;
+}
+#main-nav .clock img {
+	display: block;
+	width:200px;
+	height:70px;
+}
+#nav-second-box {
+	display:block;
+}
+#main-nav .nav-top {
+	width:800px;
+	height:34px;
+}
+#main-nav .nav-top li {
+	float:left;
+	padding:0 20px;
+	height:34px;
+	line-height: 34px;
+}
+#main-nav .nav-top li a{
+	font-size: 16px;
+	color: #333333;	
+}
+#main-nav .nav-top li a:hover{
+	color: #FF3333;
+}
+
+.ads-tips {
+	height:34px;
+	line-height:34px;
+	
+}
+.ads-tips a {
+	color:#FF3333;
+	font-size: 16px;
+}
+
+/*== 三级菜单样式 ==*/
+.nav-third {
+	position:absolute;
+	left:100%;
+	top:0;
+	width:750px;
+	height:410px;
+	display: none;
+	background: white;
+	z-index: 99999;
+}
+.nav-third .slogan {
+	height:70px;
+}
+.nav-third .slogan ul li {
+	float:left;
+	margin-right:20px ;
+	padding-left: 27px;
+	border: 0;
+	height:70px;
+	line-height: 70px;
+}
+.nav-third .slogan ul li a {
+	color: #8EDBC3;
+}
+.nav-third .slogan ul li a:hover {
+	color: blue;
+	display: inline-block;
+	
+}
+
+.nav-third .nav-third-floor {
+	width:710px;
+	height: 70px;
+	margin:0px auto;
+	border-bottom: 1px solid #EEEEEE;
+}
+.nav-third .nav-third-floor p ,.nav-third .nav-third-floor ul {
+	float: left;	
+}
+.nav-third .nav-third-floor p {
+	height:60px;
+	width:70px;
+	margin-left:27px;
+	line-height:60px;
+}
+.nav-third .nav-third-floor ul li {
+	float: left;
+	margin-right:15px ;
+	padding-left: 15px;
+	border: 0;
+	height:15px;
+}
+.nav-third .nav-third-floor ul li a {
+	color: #333333;
+	display: block;
+	height: 15px;
+}
+.nav-third-floor .nav-third-floor2 li {
+	height:70px;
+	line-height:70px;
+}
+#main-nav #nav-second-box .nav-second>li.active {
+	background:white;
+
+}
+#main-nav #nav-second-box .nav-second>li.active a {
+	color:#333;	
+}
+
+/*== 头部样式结束==*/
+
+
+/*== footer部分 ==*/
+#footer {
+	width:100%;
+	height:224px;
+	/*background: #2D2D2D;*/
+}
+#footer span {
+	color: #2D2D2D;
+}
+.footer-content {
+	width:1200px;
+	height:100%;
+	margin: 0px auto;
+}
+.fc-top {
+	width:1200px;
+	height:75px;
+	padding-top:30px;
+}
+.fc-top p {
+	width:80px;
+	height:55px;
+	float: left;
+	color: #666666;
+}
+#footer .footer-content> ul {
+	width:1100px;
+	height:65px;
+	float: left;
+}
+.fc-top ul li {
+	float:left;
+	
+}
+.fc-top ul li a {
+	color: #2D2D2D;
+	font-size: 12px;
+	padding: 0 10px;
+}
+.fc-center ul{
+	width:1200px;
+	height:28px;
+}
+.fc-center ul li {
+	float:left;
+}
+.fc-center ul li a{
+	color: #2D2D2D;
+	font-size: 12px;
+	padding: 0 10px;	
+}
+.fc-foot ul{
+	width:1200px;
+	height:30px;
+}
+.fc-foot ul li {
+	float:left;
+}
+.fc-foot ul li a{
+	color: #999999;
+	font-size: 12px;
+	padding: 0 10px;	
+}
+.fc-foot .word {
+	font-size: 12px;
+}
+.fc-foot ul li span{
+	color: #999999;
+}
+.foot-img {
+	width:800px;
+	padding-left:20px;
+	margin-left:20px;
+}
+.foot-img a {
+	margin-left:20px;	
+}
+
+.foot-img img {
+	display: inline-block;
+	width:90px;
+	height:50px;
+}
+.clear-fixed {
+	clear:both;
+}
+

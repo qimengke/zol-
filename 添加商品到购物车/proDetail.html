@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.imgSrc{width:320px;display: block;float: left;}
+			.box{float:left;}
+			.productColor{list-style: none;}
+			.productColor li,.productSize li{display: inline-block;border:1px solid #cccccc;padding:5px 10px;cursor: pointer;}
+			.productColor li.active,.productSize li.active{border:1px solid #ff6666;}
+			#msg{color:#ff6666;}
+		</style>
+	</head>
+	<body>
+		<img src="img/v1.jpg" class="imgSrc"/>
+		<div class="box">
+			<p class="productName">产品名称1111111</p>
+			<p class="productId">p0</p>
+			<p>产品价格:<span class="productPrice">79</span></p>
+			<ul class="productColor">产品颜色:
+				<li>黄色</li>
+				<li>红色</li>
+				<li>蓝色</li>
+			</ul>
+			<ul class="productSize">产品尺寸:
+				<li>90</li>
+				<li>100</li>
+				<li>110</li>
+			</ul>
+			数量:<input type="number" name="num" id="num" min="1" value="1" />
+			<p >您选择了：<span class="colorStr"></span>&nbsp;&nbsp;/&nbsp;&nbsp;<span class="sizeStr"></span></p>
+			<input type="button" id="addShop" value="加入购物车"/>
+			<a href="获取数据.html" target="_blank">取数据</a>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	var colorStr = "";//用于提示用户选择颜色
+	var sizeStr = "";//用于提示用户选择尺寸
+	
+	//图片路径数组
+		var imgsrc=["","",""];
+		$(".productColor li").on("click",function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			colorStr = $(this).html()
+			$(".colorStr").html(colorStr);
+			$(".productId").html("p"+$(this).index());
+//$(".imgSrc").attr("src",imgsrc[$(this).index()])
+		})
+		$(".productSize li").on("click",function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			sizeStr = $(this).html();
+			$(".sizeStr").html(sizeStr);
+		})
+		
+		//验证是否选中颜色
+		function checkColor(){
+			if($(".colorStr").html()==""){
+				return ""
+			}else{
+				return $(".colorStr").html();
+			}
+		}
+		
+		//验证是否选中颜色
+		function checkSize(){
+			if($(".sizeStr").html()==""){
+				return ""
+			}else{
+				return $(".sizeStr").html();
+			}
+		}
+		
+		$("#addShop").click(function(){
+			addShop();
+		})
+		function addShop(){
+			var myProductName = "myProductName";
+			var myProductPrice = "myProductPrice";
+			var myProductImg = "myProductImg";
+			var myProductColor = "myProductColor";
+			var myProductNum = "myProductNum";
+			var myProductSize = "myProductSize";
+			var myOrderState = "myOrderState";
+			var pId = $(".productId").html();
+			var productName = $(".productName").html();
+			var productPrice = $(".productPrice").html();
+			var productImg = $(".imgSrc").attr("src");
+			var productNum = $("#num").val();
+			var productColor = colorStr;
+			var productSize = sizeStr;
+			/*var jsonStr = "[{'pId':'" + pId + "',"+
+			"'productName':'" + productName + "',"+
+			"'productPrice':'" + productPrice + "',"+
+			"'productImg':'" + productImg + "',"+
+			"'productNum':'" + productNum + "',"+
+			"'productColor':'" + productColor + "',"+
+			"'productSize':'" + productSize +"'}]";*/
+			if(checkColor() == ""){
+				alert("至少选择一种颜色");
+			}else{
+				if(checkSize()== ""){
+					alert("至少选择一种尺寸");
+				}else{
+					alert("准备加入购物车");
+					addCookie(myProductName,productName,5);
+					addCookie(myProductPrice,productPrice,5);
+					addCookie(myProductImg,productImg,5);
+					addCookie(myProductColor,productColor,5);
+					addCookie(myProductNum,productNum,5);
+					addCookie(myProductSize,productSize,5);
+					addCookie(myOrderState,"0",5);
+					/*window.location = "shopCar.html";*/
+					//addCookie(pId,jsonStr,10);
+				}
+			}
+		}
+		
+		
+	</script>
+</html>

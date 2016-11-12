@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* 初始化CSS */
+*{margin: 0;padding: 0;}
+fieldset,img{border:none;}
+img{display: block;
+}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ul,ol,li{list-style:none;}
+a{color:#666;text-decoration:none;display: block;}
+
+
+#headNav {
+	width:1263px;
+	height:29px;
+	background: #f5f5f5;
+    border-bottom: 1px solid #e6e6e6;
+    color: #666;
+    line-height: 29px;
+}
+#headNavContainer {
+	width:990px;
+	height:100%;
+	margin:0 auto;
+	background: palegoldenrod;
+}
+.headNav-left {
+	width:480px;
+	height:29px;
+	margin-left:10px;
+}
+.headNav-left li{
+	float:left;
+	height: 29px;
+}
+.headNav-left li a {
+	padding-right:12px;
+	float:left;
+	padding-left:12px;
+}
+.headNav-left li a.first {
+	padding-left:0px;
+	
+}
+.headNav-left li span {
+	display: bloack;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+

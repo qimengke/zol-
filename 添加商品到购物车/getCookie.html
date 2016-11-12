@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var myProductName = "myProductName";
+		var myProductPrice = "myProductPrice";
+		var myProductImg = "myProductImg";
+		var myProductColor = "myProductColor";
+		var myProductNum = "myProductNum";
+		var myProductSize = "myProductSize";
+		var a = [1,3,5]
+		var cookieAtr = queryAllCookie();
+		var proList = cookieAtr.split(";");
+		
+		if(checkCookie(myProductName)&&checkCookie(myProductPrice)&&checkCookie(myProductImg)&&checkCookie(myProductColor)&&checkCookie(myProductNum)&&checkCookie(myProductSize)){
+			//alert("可以提取数据了");
+			document.write("产品名称："+getCookie(myProductName)+"<br/>"+
+							"产品图片:<img src='"+getCookie(myProductImg)+"' style='width:100px;'/><br/>"+
+							"产品颜色："+getCookie(myProductColor)+"<br/>"+
+							"产品数量："+getCookie(myProductNum)+"<br/>"+
+							"产品价格:"+getCookie(myProductPrice)+"<br/>"+
+							"产品尺寸:"+getCookie(myProductSize)+"<br/>"+
+							"总价："+getCookie(myProductPrice)*getCookie(myProductNum));
+		}else{
+			alert("数据不对");
+		}
+		
+	</script>
+</html>

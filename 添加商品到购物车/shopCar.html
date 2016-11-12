@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;margin: 0;
+				text-align: center;
+			}
+			table{width:600px;margin: 100px auto 15px;}
+			th{padding:5px 20px;}
+		</style>
+	</head>
+	<body>
+		
+		<table border="1" cellspacing="" cellpadding="">
+			<tr>
+				<th>产品图片</th>
+				<th>产品名称</th>
+				<th>产品价格</th>
+				<th>产品数量</th>
+				<th>产品尺寸/颜色</th>
+			</tr>
+			<tr class="list">
+			</tr>
+		</table>
+		<p >总价：<span id="totalPrice"></span></p>
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var myProductName = "myProductName";
+		var myProductPrice = "myProductPrice";
+		var myProductImg = "myProductImg";
+		var myProductNum = "myProductNum";
+		var myProductColor = "myProductColor";
+		var myProductSize = "myProductSize";
+		if(checkCookie(myProductPrice)&&checkCookie(myProductNum)&&checkCookie(myProductPrice)&&checkCookie(myProductImg)&&checkCookie(myProductColor)&&checkCookie(myProductSize)){
+			$(".list").html("<td><img src='"+getCookie(myProductImg)+"' style='width:100px;'/></td>"+
+							"<td>"+getCookie(myProductName)+"</td>"+
+							"<td>"+getCookie(myProductPrice)+"</td>"+
+							"<td>"+getCookie(myProductNum)+"</td>"+
+							"<td>"+getCookie(myProductSize)+"<br/>"+getCookie(myProductColor)+"</td>")
+			/*document.write(getCookie(myProductName)+"<br/>"+
+							getCookie(myProductPrice)+"<br/>"+
+							getCookie(myProductImg)+"<br/>"+
+							getCookie(myProductColor)+"<br/>"+
+							getCookie(myProductSize)+"<br/>")*/
+							
+							$("#totalPrice").html(getCookie(myProductPrice)*getCookie(myProductNum));
+		}
+	</script>
+</html>

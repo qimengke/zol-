@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<fieldset id="">
+			<legend>方案一</legend>
+			<input type="password" name="pwd1" id="pwd1" value="" />
+			<input type="button" name="btn1" id="btn1" value="点击切换" />
+		</fieldset>
+		<fieldset id="">
+			<legend>方案二</legend>
+			<input type="text" name="pwd" id="pwd" value="" style="display: none;"/>
+			<input type="password" name="pwd2" id="pwd2" value="" />
+			<input type="button" name="btn2" id="btn2" value="点击切换" />
+		</fieldset>
+	</body>
+	<script src="jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#btn1").on("click",function(){
+			if($("#pwd1").attr("type") == "password"){
+				$("#pwd1").attr("type","text");
+			}else if($("#pwd1").attr("type") == "text"){
+				$("#pwd1").attr("type","password");
+			}
+		});
+		var isFlag = true;
+		$("#btn2").on("click",function(){
+			if(isFlag){
+				$("#pwd2").hide();
+				$("#pwd").show();
+				$("#pwd").val($("#pwd2").val());
+				isFlag = false;
+			}else{
+				$("#pwd2").show();
+				$("#pwd").hide();
+				$("#pwd2").val($("#pwd").val());
+				isFlag = true;
+			}
+		})
+	</script>
+	
+</html>

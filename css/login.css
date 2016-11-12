@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* 初始化CSS */
+*{margin: 0;padding: 0;}
+fieldset,img{border:none;}
+img{display: block;
+}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ul,ol,li{list-style:none;}
+a{color:#666;text-decoration:none;display: block;}
+input {
+	text-indent: 10px;
+}
+/* CSS Document */
+
+body,html {
+	width:100%;
+	height:100%;
+	background: #FAFAFA;
+}
+.clear-fixed {
+	clear:both;
+}
+
+
+/*== header ==*/
+#header {
+	width:100%;
+	height:120px;
+}
+.header-box {
+	width:990px;
+	height:100px;
+	margin:0px auto;
+	padding-top:20px;
+}
+.logo {
+	width:600px;
+	height:100px;
+}
+.logo li {
+	float:left;
+	padding-right:10px;
+}
+.logo li:last-child {
+}
+.logo li:last-child a {
+	width:165px;
+	height:44px;
+	font-size: 14px;
+	line-height:44px;
+	margin-left:10px;
+	margin-top:10px;
+	color: #666666;
+}
+.logo li:last-child a:hover {
+	text-decoration: none;
+}
+.logo li:not(:first-child)  {
+	border-left:1px solid #E6E6E6;
+
+}
+
+.login-btn {
+	width:220px;
+	height:43px;
+	font-size: 14px;
+	padding-top: 20px;
+	margin-left:167px;
+}
+.logo , .login-btn {
+	float:left;
+}
+.login-btn a {
+	display:inline-block;
+	width:76px;
+	height:22px;
+	text-align: center;
+	line-height: 22px;
+	color:#CE0000;
+}
+.login-btn a:hover {
+	background: #CE0000;
+	color:white;
+	text-decoration: none;
+}
+
+/*== footer ==*/
+#footer {
+	width:100%;
+	height:66px;
+	border-top:1px solid #DCDCDC;
+}
+
+/*== main ==*/
+#main {
+	/*height:100%;*/
+	min-height: 400px;
+	width:990px;
+	margin:0px auto;
+}
+#login-inf {
+	width:988px;
+	height:350px;
+	border:1px solid #E6E6E6;
+	background: white;
+	margin-top: 26px;
+}
+.login-main {
+	width:290px;
+	height:303px;
+	margin-right:85px;
+	float:right;
+}
+#lo-ads {
+	width:520px;
+	height:350px;
+	float:left;
+}
+.login-head {
+	width:290px;
+	height:48px;
+	position: relative;
+	margin-bottom: 30px;
+}
+.login-head h3 {
+	width:129px;
+	height:28px;
+	color: #666666;
+	font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+.login-head .mobilLogin-bar {
+    float: right;
+    padding-left:17px;
+    margin-top:20px;
+    background: url(../img/shop_login_bg.png) no-repeat -278px -115px;
+    color: #333;
+    line-height: 28px;
+
+}
+.login-head .normal-bar {
+	float:right;
+	padding-left:17px;
+    margin-top:20px;
+    background: url(../img/shop_login_bg.png) no-repeat -276px -140px;
+    color: #333;
+    line-height: 28px;
+    display: none;
+}
+
+.login-head a:hover {
+	color:#E02D2D;
+}
+
+.login-head h3 , .login-head a{
+	float: left;
+}
+
+.hint {
+	width:290px;
+	height:24px;
+	background:url(../img/shop_login_bg.png) no-repeat -274px -87px;
+	border:1px solid #C72020;
+	position: absolute;
+	top:50px;
+	left:0px;
+	padding-left:20px;
+	color:#C72020;
+	background-color: #FFF2F2;
+	font-size:12px;
+	line-height:24px;
+	/*display:none;*/
+}
+
+
+.login-username {
+	width:288px;
+	height:38px;
+	border:1px solid #ccc;
+	margin-bottom:10px;
+}
+
+.login-pwd {
+	width:288px;
+	height:38px;
+	border:1px solid #ccc;
+	margin-bottom:10px;
+}
+#forget {
+	width:100%;
+	height:25px;
+	padding-left:225px;
+	font-size:12px;	
+}
+#btn {
+	width:290px;
+	height:40px;
+	margin-bottom: 10px;
+	background: #DA2D2D;
+	border:0px;
+}
+.partner {
+	width:290px;
+	height:38px;
+}
+.partner span {
+	display: block;
+	width:84px;
+	height:38px;
+	padding-right:2px;
+	font-size: 12px;
+	color: #666666;
+	line-height: 38px;
+}
+.partner span, .partner a{
+	float:left;
+}
+
+.partner a{
+	width:39px;
+	height:39px;
+	margin-right:11px;
+	float:left;
+	background:url(../img/login.png) no-repeat;
+}
+.partner a.sina {
+	background-position: 0px -82px;
+}
+.partner a.sina:hover {
+	background-position: 0px -120px;	
+}
+.partner a.qq {
+	background-position: -38px -82px;
+}
+.partner a.qq:hover {
+	background-position: -38px -120px;
+}
+.partner a.zhi {
+	background-position: -78px -82px;	
+}
+.partner a.zhi:hover {
+	background-position: -78px -120px;		
+} 
+.partner a.baidu {
+	background-position: -116px -82px;		
+}
+.partner a.baidu:hover {
+	background-position: -116px -120px;			
+}
+
+#footer-container {
+	width:990px;
+	height:18px;
+	margin:20px auto;
+}
+#footer-container ul {
+	width:100%;
+	height:100%
+}
+#footer-container ul li {
+	float:left;	
+}
+#footer-container ul li a{
+	float:left;
+	padding-right:15px;
+	padding-left: 15px;
+	color:#666666;
+}
+#footer-container ul li a:hover {
+	color:#DC2E2E;
+}
+#footer-container ul li.word {
+	margin-left:570px;
+	font-size: 12px;
+}
+
+
+
+/*== 手机等动态登陆页面的样式设置 ==*/
+#picturecode {
+	border:0px;
+}
+#login-code {
+	width:200px;
+	height:38px;
+	float:left;	
+	margin-right:8px ;
+}
+#yanzhengma {
+	width:80px;
+	/*margin-left:10px;*/
+	float:left;
+}
+
+#sendcode {
+	border:0px;
+	display: none;
+}
+#input-code {
+	width:200px;
+	height:38px;
+	float:left;
+}
+#send-code {
+	width:88px;
+	height:38px;
+	border:1px solid #CCCCCC;
+	float:left;
+	text-decoration: none;
+	line-height:38px;
+	text-align: center;
+	background: #DCDCDC;
+	color:#2D2D2D;
+}
+
+#send-code:hover {
+	background:#CCCCCC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="test/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="test/fontawesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" href="css/confirmPay.css" />
+	</head>
+
+	<body>
+
+		<!--** nav **-->
+		<div id="nav">
+			<div class="nav-center">
+				<div class="nav-left">
+					<span class="nav-left-list special"><a href="">商城首页</a></span>
+					<span id="login-username" class="nav-left-list"> Hi~欢迎来到ZOL商城，请
+						<a id='free-register' href="login.html">登陆</a>
+					</span>
+					<span class="nav-left-list"><a id="free-register" href="register.html">免费注册</a></span>
+				</div>
+				<ul class="nav-right">
+					<li class="nav-right-list"><a href="#">我的订单</a></li>
+					<li class="nav-right-list" style="position:relative;">
+						<a class="no-line" href="myCenter.html">买家中心
+							&nbsp;<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+							</a>
+
+						<div id="second-list1" style="display:none;background:white;width: 100px; border:1px solid #E6E6E6;position: absolute;left:0px; top:100%;">
+							<a href="#">我的优惠券&nbsp;<em>5</em></a>
+							<a href="#">关注的店铺&nbsp;<em>12</em></a>
+							<a href="#">关注的商品&nbsp;<em>8</em></a>
+						</div>
+					</li>
+					<li class="nav-right-list"><a href="shopCar.html">购物车0件</a></li>
+					<li class="nav-right-list"><a href="#">帮助中心</a></li>
+					<li class="nav-right-list"><a href="#">|</a></li>
+					<li class="nav-right-list" style="position:relative;">
+						<a class="no-line" href="#">
+							<i class="glyphicon glyphicon-phone"></i> 手机商城 &nbsp;
+							<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+						</a>
+
+						<div id="second-list2" style="display: none;background:white;width:150px;height:150px ;position:absolute;top:100%; left:0px;  padding-left:0px; ">
+							<img style="margin-top:13px;" src="img/erweima.png" />
+
+						</div>
+					</li>
+					<li class="nav-right-list"><a href="#">中关村在线</a></li>
+					<li class="nav-right-list"><a href="#">商家入驻</a></li>
+					<li class="nav-right-list last-list" style="position:relative;">
+						<a class="no-line" href="#">联系客服
+							&nbsp;<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+							</a>
+						<div id="second-list3" style="width:100px;display:none; position:absolute; left:0px; top:100%;">
+							400-678-0068
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--** nav **-->
+
+		<div id="container">
+			<!--** logo **-->
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/shopcar_logo.jpg" alt="" />
+						<img src="img/logo-text.png" alt="" />
+					</a>
+					<div class="liucheng">
+						<img src="img/liucheng2.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<!--** logo **-->
+
+			<!--**  主体部分    **-->
+			<div class="payment-box">
+				<div class="order-status-box">
+					<div class="submit-complete clearfix">
+						<div class="order-status">
+							<h3 class="prompt">订单已提交，请在<span>72小时</span>内完成付款（逾期自动取消）</h3>
+							<div class="details">
+								<p>
+									<span>您的订单号：2016030514165235792165</span>
+									<span>支付方式：网上支付</span>
+									<span>配送方式：包邮</span>
+								</p>
+								<p>
+									<span id="profile">收货地址：重庆万州区探讨探讨探讨探讨探讨 </span>
+									<span>收货人：</span><span id="consignee">18567614669</span>
+								</p>
+								<div class="order-detail">
+									<div class="goods-name">
+										<span class="label">商品名称：</span>
+										<p style="width:500px;"><span id="proName">【双卡双4G 顺丰包邮】三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待 真八核 纤薄机身 一体式设计 钻石切割斜边</span></p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="amount-code">
+							<div class="code">
+								<div class="code-innder">
+									<img src="img/zhifubao.png" width="85px" height="102px" />
+									
+								</div>
+								<!--<a href="#" target="_blank">支付宝钱包</a>-->
+							</div>
+							<div class="price">应付金额<span id="totalPrice">3916.00</span>元</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="payment-way">
+
+					
+					<ul class="paycard">
+						<li  class="active0">支付平台</li>
+						<li>储蓄卡</li>
+					</ul>
+					<ul class="paylist1">
+						<li>
+							<input id="spe-zhifubao" type="radio" name="way2" checked="checked"/>
+							<div><img src="img/pay2_18.jpg" alt="" /></div>
+						</li>
+						<li>
+							<input type="radio" name="way2"/>
+							<div><img src="img/pay2_21.jpg" alt="" /></div>
+						</li>
+						<li>
+							<input type="radio" name="way2"/>
+							<div><img src="img/car_bank_03.jpg" alt="" /></div>
+						</li>
+						<li>
+							<input type="radio" name="way2"/>
+							<div><img src="img/car_bank_15.jpg" alt="" /></div>
+						</li>
+					</ul>
+					<ul class="paylist1" style="display: none">
+						<li>
+							<input type="radio" name="way2"/>
+							<div><img src="img/car_bank_03.jpg" alt="" /></div>
+						</li>
+						<li>
+							<input type="radio" name="way2"/>
+							<div><img src="img/car_bank_05.jpg" alt="" /></div>
+						</li>
+						<li>
+							<input type="radio" name="way2"/>
+							<div><img src="img/car_bank_07.jpg" alt="" /></div>
+						</li>
+						<li>
+							<input type="radio" name="way2"/>
+							<div><img src="img/car_bank_15.jpg" alt="" /></div>
+						</li>
+						<li>
+							<input type="radio" name="way2"/>
+							<div><img src="img/car_bank_09.jpg" alt="" /></div>
+						</li>
+					</ul>
+					
+
+					<div class="operation  clearfix">
+						<span id="not_pay_submit" class="pay-submit-btn" style="display: none;">立即支付</span>
+						<a href="pay.html" id="can_pay_submit" style="display: block;" class="pay-submit-btn">立即支付</a>
+						<!--<span id="can_pay_tips" class="tips">您将使用银行卡支付</span>-->
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--**  footer部分    **-->
+		<div class="footer" style="height:145px;">
+			<p class="links" style="height:38px;">
+				<a target="_blank" href="javascript:void(0)">关于商城</a>|<a target="_blank" href="javascript:void(0)">营销中心</a>|<a target="_blank" href="javascript:void(0)">服务中心</a>|<a target="_blank" href="javascript:void(0)">联系我们</a>|
+				<a href="javascript:void(0)">发展历程</a>|<a target="_blank" href="javascript:void(0)">媒体报道</a>
+			</p>
+			<p style="height:38px;><span class=" copyright ">©2016中关村在线 版权所有. 京ICP备09041801号-182 <a target="_blank " href="http://www.miibeian.gov.cn/ ">京ICP证010391号</a></span></p>
+			<div class="authentication " style="height:60px;>
+				<a target="_blank" href="javascript:void(0)"><img width="108" height="40" alt="经营性网站备案信息" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/beian.png"></a>
+				<a target="_blank" href="javascript:void(0)"><img width="108" height="40" alt="海淀网络警察提醒您" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/jingcha.png"></a>
+				<a target="_blank" href="javascript:void(0)" id="___szfw_logo___"><img src="https://search.szfw.org/cert.png?l=CX20111228001277001325"></a>
+
+		</div>
+
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="登录注册/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/confirmPay.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

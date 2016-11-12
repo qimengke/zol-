@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="data"></div>
+		<input type="button" value="提交订单" id="submitBtn" />
+		<input type="button" value="确认订单" id="confirmBtn" />
+		<input type="button" value="支付" id="payBtn" />
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var myProductName = "myProductName";
+		var myProductPrice = "myProductPrice";
+		var myProductImg = "myProductImg";
+		var myProductColor = "myProductColor";
+		var myProductNum = "myProductNum";
+		var myProductSize = "myProductSize";
+		var myOrderState = "myOrderState";
+		if(checkCookie(myProductName)&& checkCookie(myProductPrice)&& checkCookie(myProductImg)&& checkCookie(myProductColor)&& checkCookie(myProductNum)&& checkCookie(myProductSize)){
+			$("#data").html('产品名称：'+getCookie(myProductName)+'<br>产品价格'+getCookie(myProductPrice)+'<br>产品图片：<img src='+getCookie(myProductImg)+' style="width:80px"/>');
+		}
+		function checkState(){
+			var state = getCookie(myOrderState);
+			switch (state){
+				case "0":
+				updateCookie(myOrderState,1);
+					break;
+				case "1":
+				updateCookie(myOrderState,2);
+				alert("表示提交订单")
+					break;
+				case "2":
+				updateCookie(myOrderState,3);
+				alert("表示确认了订单未付款")
+					break;
+				case "3":
+				alert("已支付")
+					break;
+				default:
+					break;
+			}
+		}
+		
+		//0: 添加到购物车
+		//1：表示提交订单
+		//2：表示确认了订单未付款
+		//3：已支付
+		$("#submitBtn").on("click",function(){
+			checkState()
+		})
+		$("#confirmBtn").on("click",function(){
+			checkState()
+			/*var state = getCookie(myOrderState);
+			switch (state){
+				case "0":
+				updateCookie(myOrderState,1);
+					alert("添加到购物车")
+					break;
+				case "1":
+				alert("表示提交订单")
+					break;
+				case "2":
+				alert("表示确认了订单未付款")
+					break;
+				case "3":
+				alert("已支付")
+					break;
+				default:
+					break;
+			}*/
+		})
+		$("#payBtn").on("click",function(){
+			checkState()
+		})
+	</script>
+</html>

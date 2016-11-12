@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{padding:0;margin: 0;}
+			html,body{
+				
+			}
+			.container{
+				width:100%;
+				height:1200px;
+				background-color:#f66;
+			}
+			.modal{
+				position: absolute;
+				top:0;bottom:0;
+				left:0;right:0;
+				background: rgba(0,0,0,0.3);
+				display: none;
+			}
+			
+			.modalDialog{
+				width:600px;min-height: 500px;
+				background-color: #ffffff;
+				border-radius: 0;
+				margin:100px auto;
+				
+			}
+			.modalHead{
+				width:100%;
+				height:30px;
+				position: relative;
+				text-align: center;
+			}
+			.close{
+				position: absolute;	
+				top:15px;
+				right:15px;
+				cursor: pointer;
+				display: block;
+			}
+			.modalContent{
+				width:400px;
+				height:auto;
+				margin:auto;
+				padding-top: 40px;
+			}
+			.modalContent input{
+				display: block;
+				width:400px;
+				height:36px;
+				margin-bottom:10px;
+			}
+			.modalContent input[type=button]{
+				width:180px;
+				height:36px;
+				display: inline-block;
+				float: left;
+				margin-right: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<button id="showDialog">弹出模态窗口</button>
+		</div>
+		<div class="modal">
+			<div class="modalDialog">
+				<div class="modalHead">
+					<h1>用户登录信息</h1>
+					<span class="close">×</span>
+				</div>
+				
+				<div class="modalContent">
+					<form action="" method="post">
+						<input type="text" name="userName" id="userName" value="" placeholder="用户名" />
+						<input type="password" name="pwd" id="pwd" value="" placeholder="密码" />
+						<input type="button" value="取消" id="cancel"/>
+						<input type="button" value="登录" id="login"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var bodyHeight = $("html,body").height();
+		$("#showDialog").on("click",function(){
+			$(".modal").show();
+			$("html,body").css({"height":"100%","overflow":"hidden"})
+		})
+		
+		$(".close,#cancel").on("click",function(){
+			$(".modal").hide();
+			$("html,body").css({"height":bodyHeight,"overflow":"none"})
+		})
+		
+		$(".modal").on("click",function(){
+			$(".modal").hide();
+			$("html,body").css({"height":bodyHeight,"overflow":"none"})
+		});
+		$(".modalDialog").on("click",function(){
+			return false;
+		});
+		
+		$("#login").on("click",function(){
+			alert("你登录成功了");
+			setTimeout(function(){
+				$("#cancel").click();
+			},3000);
+		})
+	</script>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="test/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="test/fontawesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+	</head>
+	<style type="text/css">
+		#register-btn:hover {
+			opacity: 0.8;
+		}
+	</style>
+
+	<body>
+
+		<!--== header ==-->
+		<div id="header">
+			<div class="header-box">
+				<ul class="logo">
+					<li>
+						<a href="javascript:void(0)"><img src="img/shoplogo.png" /></a>
+					</li>
+					<li><a href="javascript:void(0)">中关村在线旗下网上商城</a></li>
+				</ul>
+				<div class="login-btn">
+					还没有ZOL商城账号？
+					<a href="login.html">立即登陆</a>
+				</div>
+			</div>
+		</div>
+
+		<!--==  main  ==-->
+		<div id="login-main">
+			<div class="lm-head">
+				30秒快速注册，加入ZOL商城
+			</div>
+			<div id="lm-container">
+				<div id="main-content">
+					<ul class="register-tab">
+						<li class="current"><a href="javascript:void(0)">用手机号注册</a></li>
+						<li class="empty"></li>
+					</ul>
+
+					<div class="register-phone-number">
+						<div class="register-form">
+							<div class="label">
+								<i>*</i> 手机号：
+							</div>
+							<input type="text" name="phone-number" id="phone-number" maxlength="11" style="border-color:rgb(204,204,204)" />
+							<i class="right-tips right-tips1"></i>
+							<i class="wrong-tips wrong-tips1"></i>
+							<div class="tips">请填写手机号码</div>
+						</div>
+
+						<div class="register-form">
+							<div class="label">
+								<i>*</i> 验证码：
+							</div>
+							<div class="email-captcha">
+								<input type="text" name="check-number" id="check-number" style="border-color:rgb(204,204,204)" />
+								<span><img src="img/yanzhengma.png" alt="" /></span>
+								<a class="change-catcha" href="javascript:void(0)">换一张</a>
+							</div>
+
+							<i class="right-tips right-tips2"></i>
+							<i class="wrong-tips wrong-tips2"></i>
+							<div class="tips">请填写验证码</div>
+						</div>
+
+						<div class="register-form">
+							<div class="label">
+								<i>*</i> 验证码：
+							</div>
+							<div class="email-captcha">
+								<input type="text" name="check-number" id="check-number" style="border-color:rgb(204,204,204)" />
+								<span id="get-captcha">获取手机验证码</span>
+							</div>
+
+							<i class="right-tips right-tips3"></i>
+							<i class="wrong-tips wrong-tips3"></i>
+							<div class="tips tips1">请填写手机号码，然后点击[获取验证码]</div>
+						</div>
+
+						<div class="register-form">
+							<div class="label">
+								<i>*</i> 密码：
+							</div>
+							<input type="text" name="register-pwd" id="register-pwd" style="border-color:rgb(204,204,204)" />
+							<i class="right-tips right-tips4"></i>
+							<i class="wrong-tips wrong-tips4"></i>
+							<div class="tips tips1">6-16位字母和数字的组合，不可用特殊字符</div>
+						</div>
+
+						<div class="register-form">
+							<div class="label">
+								<i>*</i> 确认密码：
+							</div>
+							<input type="text" name="confirm-pwd" id="confirm-pwd" style="border-color:rgb(204,204,204)" />
+							<i class="right-tips right-tips5"></i>
+							<i class="wrong-tips wrong-tips5"></i>
+							<div class="tips tips1">再次确认密码</div>
+						</div>
+
+						<label class="agreement">
+							<input type="checkbox" value="1" name="J_regRead_phone" id="J_regRead_phone" checked="">
+								<span>同意</span>
+								<a href="javascript:void(0)" target="_blank">《商城用户协议》</a>
+								<a href="javascript:void(0)" target="_blank" class="xy_a">《隐私权说明》</a>
+						</label>
+						
+						<input style="color:#FFFFFF; font-size:18px; font-weight: bold;" type="button" id="register-btn" value="注&nbsp;&nbsp;&nbsp;&nbsp;册" />
+					</div>
+				</div>
+				<div id="fast-login">
+					<p>如果您已经注册，请&nbsp;
+						<a href="login.html">直接登录</a> 或者用以下方式登录 :
+					</p>
+					<div class="fast-login-list">
+						<a class="weibo" href="javascript:void(0)">
+							<div class="cover"></div>
+						</a>
+						<a class="tengxun" href="javascript:void(0)">
+							<div class="cover"></div>
+						</a>
+						<a class="zhifubao" href="javascript:void(0)">
+							<div class="cover"></div>
+						</a>
+						<a class="baidu" href="javascript:void(0)">
+							<div class="cover"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--== footer ==-->
+		<div id="footer">
+			<div id="footer-container">
+				<ul class="footer-nav">
+					<li><a href="javascript:void(0)">关于商城</a>|</li>
+					<li><a href="javascript:void(0)">联系我们</a>|</li>
+					<li><a href="javascript:void(0)">帮助中心</a></li>
+					<li class="word">©2016. 中关村在线 版权所有</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	<script src="登录注册/cookie.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="test/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="test/fontawesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/confirm-order.css" />
+		<link rel="stylesheet" type="text/css" href="css/select2.css" />
+
+		<style type="text/css">
+			.select2-container{width: 130px;}
+		</style>
+	</head>
+
+	<body>
+		<!--** 模态框  **-->
+		<div class="confirm-inf">
+			<span>请问确认删除地址么？</span>
+			<div class="xia">
+				<a id="shanchu" href="#">确认删除</a>
+				<a id="quxiao" href="#">取消</a>
+			</div>
+			
+		</div>
+		<div class="motai">
+			
+		</div>
+		<!--** nav **-->
+		<div id="nav">
+			<div class="nav-center">
+				<div class="nav-left">
+					<span class="nav-left-list special"><a href="">商城首页</a></span>
+					<span id="login-username" class="nav-left-list"> Hi~欢迎来到ZOL商城，请
+						<a id='free-register' href="login.html">登陆</a>
+					</span>
+					<span class="nav-left-list"><a id="free-register" href="register.html">免费注册</a></span>
+				</div>
+				<ul class="nav-right">
+					<li class="nav-right-list"><a href="#">我的订单</a></li>
+					<li class="nav-right-list" style="position:relative;">
+						<a class="no-line" href="myCenter.html">买家中心
+							&nbsp;<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+							</a>
+
+						<div id="second-list1" style="display:none;background:white;width: 100px; border:1px solid #E6E6E6;position: absolute;left:0px; top:100%; z-index: 99999;">
+							<a href="#">我的优惠券&nbsp;<em>5</em></a>
+							<a href="#">关注的店铺&nbsp;<em>12</em></a>
+							<a href="#">关注的商品&nbsp;<em>8</em></a>
+						</div>
+					</li>
+					<li class="nav-right-list"><a href="shopCar.html">购物车0件</a></li>
+					<li class="nav-right-list"><a href="#">帮助中心</a></li>
+					<li class="nav-right-list"><a href="#">|</a></li>
+					<li class="nav-right-list" style="position:relative;">
+						<a class="no-line" href="#">
+							<i class="glyphicon glyphicon-phone"></i> 手机商城 &nbsp;
+							<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+						</a>
+
+						<div id="second-list2" style="display: none; z-index:99999; background:white;width:150px;height:150px ;position:absolute;top:100%; left:0px;  padding-left:13px; ">
+							<img style="margin-top:13px" src="img/erweima.png" />
+
+						</div>
+					</li>
+					<li class="nav-right-list"><a href="#">中关村在线</a></li>
+					<li class="nav-right-list"><a href="#">商家入驻</a></li>
+					<li class="nav-right-list last-list" style="position:relative;">
+						<a class="no-line" href="#">联系客服
+							&nbsp;<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+							</a>
+						<div id="second-list3" style="width:100px;display:none; position:absolute; left:0px; top:100%;">
+							400-678-0068
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--** nav **-->
+
+		<!--** logo **-->
+		<div id="container">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/shopcar_logo.jpg" alt="" />
+						<img src="img/logo-text.png" alt="" />
+					</a>
+					<div class="liucheng">
+						<img src="img/liucheng2.png" alt="" />
+					</div>
+				</div>
+			</div>
+
+			<!--**    订单信息          **-->
+
+			<table id="add-infor">
+				<tbody>
+					<tr>
+						<td class="cell-1">收货人信息</td>
+						<td class="cell-2">
+							
+							<ul class="address-list">
+								<li class="add-edits ">
+									<label>
+										<input name="addNewAddress" type="radio" value="" checked="">添加新地址</label>
+									<div class="infor-editor editBox " id="infor-editor">
+										<dl>
+											<dt><em class="xh">*</em>收货人：</dt>
+											<dd>
+												<input name="truename" id="deliverName" type="text" value="" class="text recinput" maxlength="10"><span class="wrong-tips none" id="deliverNameTips">请填写收货人</span>
+											</dd>
+										</dl>
+										<dl class="area">
+											<div class="main">
+												<dt><em class="xh">*</em>所在地区：</dt>
+												<select name="loc_province" id="loc_province">
+												</select>
+												<select name="loc_city" id="loc_city">
+												</select>
+												<select name="loc_town" id="loc_town">
+												</select>
+												<input type="button" name="btnval" id="btntext" value="获取地址" />
+												<p id="msg"></p>
+											</div>
+
+											<span class="wrong-tips none" id="deliverAreaTips">请选择地区</span>
+											</dd>
+										</dl>
+										<dl class="detailed-address">
+											<dt><em class="xh">*</em>详细地址：</dt>
+											<dd>
+												<input name="address" id="deliverAddress" type="text" value="" class="text addinput" maxlength="30">
+												<span class="wrong-tips none" id="deliverAddressTips">请填写详细地址，5~30字</span>
+												<span class="wrong-tips none" id="deliverNameTips">请填写收货人 </span>
+											</dd>
+										</dl>
+										<div class="number clearfix">
+											<dl style="float:left;">
+												<dt><em class="xh">*</em>手机号码：</dt>
+												<dd style="width:152px; height:26px; float:left;">
+													<input name="moblie" id="deliverMobile" type="text" value="" class="text" maxlength="11">
+													<em class="tips" style="width:13px;">或</em>
+												</dd>
+											</dl>
+											<dl class="fixed-line" style="width:460px;height:36px; float:left; margin-left:10px;">
+
+												<dd style="float:left;">
+													<em class="tips" id="deliverMobilePhoneTips" style="line-height:25px; width:200px;">请输入您的手机号码</em>
+												</dd>
+
+											</dl>
+										</div>
+										<label class="setup-default">
+											<input name="deliverDefault" id="deliverDefault" type="checkbox" class="checkbox" value="0" style="display:inline-block;">设置为默认地址</label>
+										<input addressid="0" id="deliverBotton" type="button" class="savebtn w120-btn" value="确认收货地址" />
+									</div>
+								</li>
+								<li class="after-add">
+									<div class="after-infor">										
+										<label style="display: block; float:left;">
+											<input id="after-add" name="addNewAddress" type="radio" value="" checked="">										
+										</label>
+										<span id="name"></span>
+										<span id="address"></span>
+										<span id="phoneNumber"></span>
+										<a id="edit" href="javascript:void(0)">编辑</a>
+										<a id="del" href="#">删除</a>
+									</div>
+								</li>
+								<li class="not-true">
+																		
+										<label style="display: block; float:left;">
+											<input id="not-true" name="addNewAddress" type="radio" value="" checked="">										
+										</label>
+										<span id="not-true-inf">添加新地址（最多可添加10个地址,您还可以添加9个地址）</span>
+									
+								</li>
+							</ul>
+
+							<div class="more-address none" id="addressShow"><a href="#" class="unfolds">更多常用地址</a></div>
+							<div class="more-address none" id="addressHide"><a href="#" class="fold">收起常用地址</a></div>
+
+							<div class="add-address none">
+								<label>
+									<input name="addAddress" type="radio" value="1" onclick="$.showAddressBox()">添加新地址（最多可添加10个地址,您还可以添加10个地址）</label>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!--**     商品详情            **-->
+
+			<div class="order-table mt20">
+				<table width="100%">
+					<tbody>
+						<tr>
+							<th class="th-1">
+								<label>
+									<input class="all-check" name="checkAllCart" type="checkbox" value="1" checked="">全选</label>
+							</th>
+							<th class="th-2">所选商品</th>
+							<th class="th-3">单价（元）</th>
+							<th class="th-4">数量</th>
+							<th class="th-5">优惠</th>
+							<th class="th-6">小计（元）</th>
+							<th class="th-7">操作</th>
+						</tr>
+
+						<tr id="merchant_188528">
+
+						</tr>
+						<tr rel="goods-order" id="cart_2308941">
+							<td colspan="2" class="s-infor">
+								<input name="cartId[]" type="checkbox" value="2308941" item="item" rel="foritem" merchantid="188528" checked="">
+								<a href="trueDetail.html" class="pic" target="_blank"><img width="80" height="60" src="" alt="【双卡双4G 顺丰包邮】三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待 真八核 纤薄机身 一体式设计 钻石切割斜边"></a>
+								<div class="inforbox">
+									<h3 class="tit"><a href="trueDetail.html" title="【双卡双4G 顺丰包邮】三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待 真八核 纤薄机身 一体式设计 钻石切割斜边" target="_blank">【双卡双4G 顺丰包邮】三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待 真八核 纤薄机身 一体式设计 钻石切割斜边</a></h3>
+
+									<p id="pro-color">颜色：黑色行货16GB</p>
+									<div class="info-con">
+										<span>套装：官方标配</span>
+									</div>
+
+								</div>
+							</td>
+							<td class="s-price ">
+								<em id="one-price">1958</em>
+
+							</td>
+							<td class="s-amount ">
+								<div class="buy-num">
+
+									<input type="text" autocomplete="off" class="text-amount" value="1" id="cartNumber_2308941" readonly="true" style="margin-left:30px;">
+
+									<div class="tips-2" id="tips_2308941" style="display:none;">最多只能购买10件</div>
+								</div>
+							</td>
+							<td class="s-agio">
+								<div>−−</div>
+
+							</td>
+							<td class="s-total">
+								<em id="cartGoodsPcie_2308941">1958</em>
+							</td>
+							<td class="s-del">
+								<div class="s-delbox">
+									<a href="javascript:void(0)" title="移入收藏夹">移入收藏夹</a>
+									
+									<div class="deletebox" style="display:none;" id="zp-cart-2308941">
+										<p>确认要删除该商品吗？</p>
+										<a href="javascript:void(0)">是的</a><a href="javascript:void(0)">取消</a> <i></i>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!--**   留言部分         **-->
+			<div class="remark">
+				<div class="order-remark">订单备注</div>
+				<div class="re-right">
+					<textarea name="buyer-note-188528" id="orderNote" fn="limit" limit="200"
+					style="color: rgb(153, 153, 153);">您可以填写对商品、配送的要求...</textarea>
+				</div>
+				<div class="order-total">
+					<ul class="total-price">
+						<li><span>商品总价：</span><em id="goods-total-price">¥3916</em></li>
+						<li><span>运费：</span><em id="goods-freight-price">¥-</em></li>
+						<li><span>订单总计：</span><em class="total" id="total-price">¥3916</em></li>
+					</ul>
+				</div>
+				<a id="confirm-pay" href="confirmPay.html">确认支付</a>
+			</div>
+		</div>
+		<!--**  footer部分    **-->
+		<div class="footer" style="height:145px;">
+			<p class="links" style="height:38px;">
+				<a target="_blank" href="javascript:void(0)">关于商城</a>|<a target="_blank" href="javascript:void(0)">营销中心</a>|<a target="_blank" href="javascript:void(0)">服务中心</a>|<a target="_blank" href="javascript:void(0)">联系我们</a>|
+				<a href="javascript:void(0)">发展历程</a>|<a target="_blank" href="javascript:void(0)">媒体报道</a>
+			</p>
+			<p style="height:38px;><span class=" copyright ">©2016中关村在线 版权所有. 京ICP备09041801号-182 <a target="_blank " href="http://www.miibeian.gov.cn/ ">京ICP证010391号</a></span></p>
+			<div class="authentication " style="height:60px;>
+				<a target="_blank" href="javascript:void(0)"><img width="108" height="40" alt="经营性网站备案信息" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/beian.png"></a>
+				<a target="_blank" href="javascript:void(0)"><img width="108" height="40" alt="海淀网络警察提醒您" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/jingcha.png"></a>
+				<a target="_blank" href="javascript:void(0)" id="___szfw_logo___"><img src="https://search.szfw.org/cert.png?l=CX20111228001277001325"></a>
+
+		</div>
+
+		</div>
+
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/select2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/location.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/area.js" type="text/javascript" charset="utf-8"></script>
+	<script src="登录注册/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/confirm-order.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

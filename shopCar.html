@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="test/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="test/fontawesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/shopCar.css" />
+	</head>
+
+	<body>
+
+		<div id="nav">
+			<div class="nav-center">
+				<div class="nav-left">
+					<span class="nav-left-list special"><a href="">商城首页</a></span>
+					<span id="login-username" class="nav-left-list"> Hi~欢迎来到ZOL商城，请
+						<a id='free-register' href="login.html">登陆</a>
+					</span>
+					<span class="nav-left-list"><a id="free-register" href="register.html">免费注册</a></span>
+				</div>
+				<ul class="nav-right">
+					<li class="nav-right-list"><a href="#">我的订单</a></li>
+					<li class="nav-right-list" style="position:relative;">
+						<a class="no-line" href="#">买家中心
+							&nbsp;<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+							</a>
+
+						<div id="second-list1" style="display:none;background:white;width: 100px; border:1px solid #E6E6E6;position: absolute;left:0px; top:100%;">
+							<a href="#">我的优惠券&nbsp;<em>5</em></a>
+							<a href="#">关注的店铺&nbsp;<em>12</em></a>
+							<a href="#">关注的商品&nbsp;<em>8</em></a>
+						</div>
+					</li>
+					<li class="nav-right-list"><a href="#">购物车0件</a></li>
+					<li class="nav-right-list"><a href="#">帮助中心</a></li>
+					<li class="nav-right-list"><a href="#">|</a></li>
+					<li class="nav-right-list" style="position:relative;">
+						<a class="no-line" href="#">
+							<i class="glyphicon glyphicon-phone"></i> 手机商城 &nbsp;
+							<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+						</a>
+
+						<div id="second-list2" style="display: none;background:white;width:150px;height:150px ;position:absolute;top:100%; left:0px;  padding-left:0px; ">
+							<img style="margin-top:13px;" src="img/erweima.png" />
+
+						</div>
+					</li>
+					<li class="nav-right-list"><a href="#">中关村在线</a></li>
+					<li class="nav-right-list"><a href="#">商家入驻</a></li>
+					<li class="nav-right-list last-list" style="position:relative;">
+						<a class="no-line" href="#">联系客服
+							&nbsp;<i class="glyphicon glyphicon-chevron-down"></i>
+							<i class="glyphicon glyphicon-chevron-up"></i>
+							</a>
+						<div id="second-list3" style="width:100px;display:none; position:absolute; left:0px; top:100%;">
+							400-678-0068
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="container">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/shopcar_logo.jpg" alt="" />
+						<img src="img/logo-text.png" alt="" />
+					</a>
+					<div class="liucheng">
+						<img src="img/liucheng.png" alt="" />
+					</div>
+				</div>
+			</div>
+			
+			<div id="man-shopCar">
+				
+			
+				<div class="cart-state mt">
+					<p>购物车状态<em>（1/30）</em></p>
+					<div class="total">
+						<input name="submitCart" type="submit" value="去结算"><span>总计（不含运费）：<em>¥</em><em class="total-cart-price">1958</em></span></div>
+				</div>
+	
+				<div class="order-table mt20">
+					<table width="100%">
+						<tbody>
+							<tr>
+								<th class="th-1">
+									<label>
+										<input class="all-check" name="checkAllCart" type="checkbox" value="1" checked="">全选</label>
+								</th>
+								<th class="th-2">所选商品</th>
+								<th class="th-3">单价（元）</th>
+								<th class="th-4">数量</th>
+								<th class="th-5">优惠</th>
+								<th class="th-6">小计（元）</th>
+								<th class="th-7">操作</th>
+							</tr>
+		
+							<tr id="merchant_188528">
+								<td colspan="7" class=" store-infor clearfix">
+									<div class="shopname">
+										<input name="merchantId[]" type="checkbox" rel="forshop" value="188528" checked="">店铺：<a href="#" target="_blank">盛通数码专营店</a>
+									</div>
+									<div class="contact">
+										<a class="tag-security" style="margin: 0 -9px 0 0">&nbsp;</a>
+									</div>
+									<div class="contact">
+		
+										<a target="_blank" href="#"><img border="0" src="http://wpa.qq.com/pa?p=2:2584882549:52" alt="点击这里给我发消息" title="点击这里给我发消息"></a>
+									</div>
+								</td>
+							</tr>
+							<!--<tr rel="goods-order" id="cart_2308941">
+								<td colspan="2" class="s-infor">
+									<input name="cartId[]" type="checkbox" value="2308941" item="item" rel="foritem" merchantid="188528" checked="">
+									<a href="trueDetail.html" class="pic" target="_blank"><img width="80" height="60" src="http://i1.mercrt.fd.zol-img.com.cn/t_s80x60/g4/M05/09/08/Cg-4zFUGe-OIO4zxAADsDCIhUUQAAW0gQBzCLUAAOwk171.jpg" alt="【双卡双4G 顺丰包邮】三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待 真八核 纤薄机身 一体式设计 钻石切割斜边"></a>
+									<div class="inforbox">
+										<h3 class="tit"><a href="trueDetail.html" title="【双卡双4G 顺丰包邮】三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待 真八核 纤薄机身 一体式设计 钻石切割斜边" target="_blank">【双卡双4G 顺丰包邮】三星 Galaxy A7 (SM-A7000)  移动联通4G手机 双卡双待 真八核 纤薄机身 一体式设计 钻石切割斜边</a></h3>
+										
+		
+										<p>颜色：黑色行货16GB</p>
+										<div class="info-con">
+											<span>套装：官方标配</span>
+										</div>
+		
+									</div>
+								</td>
+								<td class="s-price ">
+									<em id="one-price">1958</em>
+		
+								</td>
+								<td class="s-amount ">
+									<div class="buy-num">
+										<a class="minus" href="javascript:void(0)" title="减一" >-</a>
+										<input type="text" autocomplete="off" class="text-amount" value="1" id="cartNumber_2308941" readonly="true">
+										<a class="plus" href="javascript:void(0)" title="加一">+</a>
+										<div class="tips-2" id="tips_2308941" style="display:none;">最多只能购买10件</div>
+									</div>
+								</td>
+								<td class="s-agio">
+									<div>−−</div>
+		
+								</td>
+								<td class="s-total">
+									<em id="cartGoodsPcie_2308941">1958</em>
+								</td>
+								<td class="s-del">
+									<div class="s-delbox">
+										<a href="javascript:void(0)" title="移入收藏夹">移入收藏夹</a>
+										<a href="javascript:void(0)">删除</a>
+										<div class="deletebox" style="display:none;" id="zp-cart-2308941">
+											<p>确认要删除该商品吗？</p>
+											<a href="javascript:void(0)" >是的</a><a href="javascript:void(0)">取消</a> <i></i>
+										</div>
+									</div>
+								</td>
+							</tr>-->
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="total-price">
+					商品总价
+					<span>（不含运费）</span>：<em>¥</em>
+					<em class="total-cart-price">3916</em>
+				</div>
+				
+				<div class="order-foot clearfix">
+					<label><input name="checkAllCart" type="checkbox" value="1" class="all-check" checked="">全选</label>
+					<a class="deletPro" href="javascript:void(0)">批量删除</a>
+		                        			
+					<a href="index.html" class="go-shopping">&lt;&lt;继续购物</a>
+					<a href="confirm-order.html" class="accounting-btn">去结算</a>			
+				</div>
+			</div>
+			<!-- 空购物车的样式  -->
+			
+			<dl id="empty-shopCar" class="shopcar-tip">
+				<dt>您的购物车里还没有商品，您可以：</dt>
+				<dd>去<a href="index.html">挑选商品</a></dd>
+			</dl>
+		</div>
+
+		<!--**  footer部分    **-->
+		<div class="footer">
+			<p class="links"><a target="_blank" href="javascript:void(0)">关于商城</a>|<a target="_blank" href="javascript:void(0)">营销中心</a>|<a target="_blank" href="javascript:void(0)">服务中心</a>|<a target="_blank" href="javascript:void(0)">联系我们</a>|
+				<a href="javascript:void(0)">发展历程</a>|<a target="_blank" href="javascript:void(0)">媒体报道</a></p>
+			<p><span class="copyright">©2016中关村在线 版权所有. 京ICP备09041801号-182 <a target="_blank" href="http://www.miibeian.gov.cn/">京ICP证010391号</a></span></p>
+			<div class="authentication">
+				<a target="_blank" href="javascript:void(0)"><img width="108" height="40" alt="经营性网站备案信息" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/beian.png"></a>
+				<a target="_blank" href="javascript:void(0)"><img width="108" height="40" alt="海淀网络警察提醒您" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/jingcha.png"></a>
+				<a target="_blank" href="javascript:void(0)" id="___szfw_logo___"><img src="https://search.szfw.org/cert.png?l=CX20111228001277001325"></a>
+
+			</div>
+			<img style="display:none" border="0" width="1" height="1" src="http://pv.zol.com.cn/images/pvhit0001.gif?t=1457010873310084&amp;subcat=0&amp;vuserid=zol_6757v041f89m751&amp;http://order.zol.com/index.php?c=Cart&amp;ip_ck=58WJ5/zwj7QuMDI4MDY3LjE0NTYxOTM5NjE=&amp;lv=1457010874&amp;vn=27&amp;sr=1280x800&amp;sc=24&amp;fl=20.0&amp;ti=%E8%B4%AD%E7%89%A9%E8%BD%A6%20%E6%9F%A5%E7%9C%8B%E8%B4%AD%E7%89%A9%E8%BD%A6&amp;se=61cd5ab62d3d75aacb355f81f906fdff&amp;uv=211.95.6.66&amp;cv=&amp;zmac=0&amp;manuid=0&amp;ldt=10555&amp;mzcv=&amp;mztext=&amp;third_ip_ck=58WJ5/zwj7QuMDI4MDY3LjE0NTYxOTM5NjE=&amp;posid=">
+
+		</div>
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="登录注册/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shopCar.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

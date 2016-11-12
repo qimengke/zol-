@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	var myOrderState = "myOrderState";
+		function checkState(){
+			var state = getCookie(myOrderState);
+			switch (state){
+				case "0":
+				updateCookie(myOrderState,1);
+				alert("添加到购物车")
+					break;
+				case "1":
+				updateCookie(myOrderState,2);
+				alert("表示提交订单")
+					break;
+				case "2":
+				updateCookie(myOrderState,3);
+				alert("表示确认了订单未付款")
+					break;
+				case "3":
+				alert("已支付")
+					break;
+				default:
+					break;
+			}
+		}
+		
+		checkState();
+	</script>
+</html>
